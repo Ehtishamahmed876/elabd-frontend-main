@@ -68,15 +68,12 @@ const Client = () => {
 
           <div className="flex p-4 lg:px-16 items-center">
             <div className="flex-1">
-              <h1 className="2xl:text-[64px] md:text-[40px] md:leading-[3rem] 2xl:leading-[5rem] text-lg font-[700] text-black">
-                
-                <span className="font-[700] text-2xl md:leading-[3rem] 2xl:leading-[5rem] md:text-[48px] 2xl:text-[80px] text-[#21AC77]">
+              <h1 className="font-[700] text-2xl md:leading-[3rem] 2xl:leading-[5rem] md:text-[48px] 2xl:text-[80px] text-[#21AC77]">
                   Elabd Technologies  
+                <span className="2xl:text-[64px] mx-2 2xl:mx-6  md:text-[40px] md:leading-[3rem] 2xl:leading-[5rem] text-lg font-[700] text-black">
+                    With Thousands of Satisfied 
                 </span>
-                With Thousands of Satisfied 
-                <span className="font-[700] text-2xl md:leading-[3rem] 2xl:leading-[5rem] md:text-[48px] 2xl:text-[80px] text-[#21AC77]">
-                  Customers
-                </span>
+                Customers
               </h1>
               <p className="md:text-lg  2xl:text-xl font-[400] text-[#8b8b8b] ">
                 Experience the excellence that sets Elabd Technologies apart.

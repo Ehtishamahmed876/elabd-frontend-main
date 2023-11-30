@@ -78,9 +78,12 @@ const About = () => {
                 </p>
               </div>
               <div className="flex justify-between ">
+                <Link href={"/projects"}>
                 <button className="bg-black p-3 text-white w-40 rounded-3xl">
                   Explore
                 </button>
+                </Link>
+                <Link href={"/projects"}>
                 <div className="bg-black p-3 rounded-full  bg-gradient-to-r  from-[#35D373] to-[#1C9E76]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +100,7 @@ const About = () => {
                     />
                   </svg>
                 </div>
+                </Link>
               </div>
             </div>
 
@@ -118,9 +122,12 @@ const About = () => {
                 </p>
               </div>
               <div className="flex justify-between">
+              <Link href={"/projects"}>
                 <button className="bg-black p-3 text-white w-40 rounded-3xl">
                   Explore
                 </button>
+              </Link>
+              <Link href={"/projects"}>
                 <div className="bg-black p-3 rounded-full  bg-gradient-to-r  from-[#35D373] to-[#1C9E76]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -137,6 +144,7 @@ const About = () => {
                     />
                   </svg>
                 </div>
+              </Link>
               </div>
             </div>
             <div className="flex flex-col gap-10 border-b-2 relative border-black p-8 md:px-16 ">
@@ -157,9 +165,12 @@ const About = () => {
                 </p>
               </div>
               <div className="flex justify-between">
+              <Link href={"/projects"}>
                 <button className="bg-black p-3 text-white w-40 rounded-3xl">
                   Explore
                 </button>
+              </Link>
+              <Link href={"/projects"}>
                 <div className="bg-black p-3 rounded-full  bg-gradient-to-r  from-[#35D373] to-[#1C9E76]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -176,6 +187,7 @@ const About = () => {
                     />
                   </svg>
                 </div>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col border-b-2 border-black gap-10  relative  p-8 md:px-16 ">
@@ -196,9 +208,12 @@ const About = () => {
                 </p>
               </div>
               <div className="flex justify-between">
+              <Link href={"/projects"}>
                 <button className="bg-black p-3 text-white w-40 rounded-3xl">
                   Explore
                 </button>
+              </Link>
+              <Link href={"/projects"}>
                 <div className="bg-black p-3 rounded-full  bg-gradient-to-r  from-[#35D373] to-[#1C9E76]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -215,6 +230,7 @@ const About = () => {
                     />
                   </svg>
                 </div>
+              </Link>
               </div>
             </div>
           </div>

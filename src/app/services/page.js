@@ -62,62 +62,78 @@ const Services = () => {
                         <div className='flex flex-col gap-10 border-b-2 relative border-black p-8 md:px-16 border-t-2' >
                             <p className='text-black text-[16px] font-[700] absolute left-1 top-5 '>01/</p>
                             <div className='flex flex-col  items-center md:gap-8'>
-                                <h1 className='font-[700] text-3xl md:text-[40px] 2xl:text-[48px] 2xl:leading-[3rem] text-black'>Ui/Ux Design</h1>
+                                <h1 className='font-[700] text-3xl md:text-[36px] 2xl:text-[48px] 2xl:leading-[3rem] text-black'>Ui/Ux Design</h1>
                                 <p className='font-[400] text-sm 2xl:text-[16px] text-[#808080]'>Discover a new level of user interaction with Us' superior UI and UX design services. Our approach focuses on creating visually appealing and easy-to-use digital environments that captivate users. We prioritize seamless experiences to ensure your audience remains engaged and satisfied.</p>
                             </div>
                             <div className='flex justify-between'>
+                                <Link href={'/projects'}>
                                 <button className="bg-black p-3 text-white w-40 rounded-3xl">Explore</button>
+                                </Link>
+                                <Link href={'/projects'}>
                                 <div className='bg-black p-3 rounded-full  bg-gradient-to-r  from-[#35D373] to-[#1C9E76]'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
                                 </div>
+                                </Link>
                             </div>
                         </div>
 
                         <div className='flex flex-col gap-10 border-b-2 relative border-black p-8 md:px-16 ' >
                             <p className='text-black text-[16px] font-[700] absolute left-1 top-5 '>02/</p>
                             <div className='flex flex-col  items-center md:gap-8'>
-                                <h1 className='font-[700] text-3xl md:text-[40px] 2xl:text-[48px] 2xl:leading-[3rem] text-black'>Flutter Development</h1>
+                                <h1 className='font-[700] text-3xl md:text-[36px] 2xl:text-[48px] 2xl:leading-[3rem] text-black'>Flutter Development</h1>
                                 <p className='font-[400] text-sm 2xl:text-[16px] text-[#808080]'>Experience the pinnacle of cross-platform development through Our' expert Flutter services. We specialize in blending performance and aesthetics, utilizing Flutter's capabilities to build standout applications. Our proficiency guarantees dynamic and feature-rich apps that offer an exceptional user experience.</p>
                             </div>
                             <div className='flex justify-between'>
+                            <Link href={'/projects'}>
                                 <button className="bg-black p-3 text-white w-40 rounded-3xl">Explore</button>
+                            </Link>
+                            <Link href={'/projects'}>
                                 <div className='bg-black p-3 rounded-full  bg-gradient-to-r  from-[#35D373] to-[#1C9E76]'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
                                 </div>
+                            </Link>
                             </div>
                         </div>
                         <div className='flex flex-col gap-10 border-b-2 relative border-black p-8 md:px-16 ' >
                             <p className='text-black text-[16px] font-[700] absolute left-1 top-5 '>03/</p>
                             <div className='flex flex-col  items-center md:gap-8'>
-                                <h1 className='font-[700] text-3xl md:text-[40px] 2xl:text-[48px] 2xl:leading-[3rem] text-black'>Web Design</h1>
+                                <h1 className='font-[700] text-3xl md:text-[36px] 2xl:text-[48px] 2xl:leading-[3rem] text-black'>Web Design</h1>
                                 <p className='font-[400] text-sm 2xl:text-[16px] text-[#808080]'>Elevate your online presence with Us' custom web design services. We specialize in creating visually stunning websites that not only catch the eye but also ensure smooth and efficient functionality. Our expertise lies in blending aesthetics with user-friendly design, ensuring an immersive experience for your audience.</p>
                             </div>
                             <div className='flex justify-between'>
+                                <Link href={'/projects'}>
                                 <button className="bg-black p-3 text-white w-40 rounded-3xl">Explore</button>
+                               </Link>
+                                <Link href={'/projects'}>
                                 <div className='bg-black p-3 rounded-full  bg-gradient-to-r  from-[#35D373] to-[#1C9E76]'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
                                 </div>
+                                </Link>
                             </div>
                         </div>
                         <div className='flex flex-col gap-10  relative  p-8 md:px-16 ' >
                             <p className='text-black text-[16px] font-[700] absolute left-1 top-5 '>04/</p>
                             <div className='flex flex-col  items-center md:gap-8'>
-                                <h1 className='font-[700] text-3xl md:text-[40px] 2xl:text-[48px] 2xl:leading-[3rem]  text-black'>Animation Making</h1>
+                                <h1 className='font-[700] text-3xl md:text-[36px] 2xl:text-[48px] 2xl:leading-[3rem]  text-black'>Animation Making</h1>
                                 <p className='font-[400] text-sm 2xl:text-[16px] text-[#808080]'>Experience the power of storytelling through Our' animation design services. We bring creativity to life by transforming static ideas into captivating and engaging animations. Our team excels in crafting dynamic visuals that convey your message effectively and leave a lasting impact on your audience.</p>
                             </div>
                             <div className='flex justify-between'>
+                                <Link href={'/projects'}>
                                 <button className="bg-black p-3 text-white w-40 rounded-3xl">Explore</button>
+                                </Link>
+                                <Link href={'/projects'}>
                                 <div className='bg-black p-3 rounded-full  bg-gradient-to-r  from-[#35D373] to-[#1C9E76]'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
                                 </div>
+                                </Link>
                             </div>
                         </div>
 
@@ -164,7 +180,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>
@@ -187,7 +203,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>
@@ -211,7 +227,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>
@@ -237,7 +253,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>
@@ -260,7 +276,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>
@@ -287,7 +303,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>
@@ -310,7 +326,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>
@@ -333,7 +349,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>
@@ -360,7 +376,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>
@@ -383,7 +399,7 @@ const Services = () => {
                                             </div>
 
                                         </div>
-                                        <p className='text-black foot-[400] text-sm hidden lg:block'>
+                                        <p className='text-black foot-[400] text-xs 2xl:text-sm hidden lg:block'>
                                             Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                                         </p>
                                     </div>

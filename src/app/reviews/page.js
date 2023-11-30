@@ -125,7 +125,7 @@ const Reviews = () => {
         <Navbar />
         <div className="flex flex-col  mx-4 md:mx-16 justify-center items-center py-5 md:py-20">
           <h1 className="md:text-[40px]  2xl:text-[48px] md:leading-[5rem]  font-[600] text-xl ">
-            <span className="font-[700] mr-4 text-[#21AC77] text-xl md:text-[48px] 2xl:text-[64px]">
+            <span className="font-[700] mr-2 2xl:mr-4 text-[#21AC77] text-xl md:text-[48px] 2xl:text-[64px]">
               Words
             </span>
             of Praise from Our
@@ -183,13 +183,14 @@ const Reviews = () => {
                         d="M0 30 q150 -60 300 0 t300 0 t300 0 t300 0 t300 0 v70 H0 v-60 Z"
                     ></path>
                 </svg>
-          <div className="m-4 md:m-16 pb-8 md:pb-20">
+         
+        </div>
+      </div>
+      <div className="m-4 md:m-16 flex flex-col gap-8 2xl:gap-16  my-8 ">
+          <div className="">
             <h1 className="text-2xl md:text-4xl 2xl:text-6xl font-[700]">Reviews</h1>
             <p>Discover what our clients have to say about Elabd Technologies </p>
           </div>
-        </div>
-      </div>
-      <div className="m-4 md:m-16  my-8 md:my-32">
         <ProgramSlider  />
       </div>
       <Footer />

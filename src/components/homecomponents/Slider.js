@@ -140,14 +140,14 @@ const CustomLeftArrow = ({ onClick, ...rest }) => {
               alt={review.name}
               className="w-24 h-24 md:w-48 md:h-48 rounded-full"
             />
-            <h1 className="text-2xl font-[700]">{review.name}</h1>
+            <h1 className="2xl:text-2xl font-[700]">{review.name}</h1>
             <p>{formatTimestamp(review.timestamp)}</p>
             <div className="flex space-x-1">
               {Array.from({ length: review.rating }).map((_, index) => (
                 <span key={index} className="text-yellow-400 text-4xl">&#9733;</span>
               ))}
             </div>
-            <p className="text-xl font-[600] text-center">{review.designation}</p>
+            <p className="2xl:text-xl font-[600] text-center">{review.designation}</p>
             <p className="text-center text-sm md:text-base">{review.review}</p>
           </div>
         ))}

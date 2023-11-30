@@ -9,17 +9,17 @@ const Careers = () => {
       <div className="bg-white ">
         <Navbar />
         <div className="  md:mt-10 mt-2 px-4 p-2 py-10 md:py-20 md:px-16  flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-col justify-center items-center lg:items-start  lg:w-[55%] gap-5 md:gap-10">
+          <div className="flex flex-col justify-center items-center lg:items-start  lg:w-[55%] gap-5 2xl:gap-10">
             <div className="font-inter text-black ">
-              <h3 className="font-[700] text-[#21AC77] text-3xl md:leading-[5rem]  md:text-[64px]">
+              <h3 className="font-[700] text-[#21AC77] text-3xl md:leading-[3rem] 2xl:leading-[5rem] md:text-[48px]  2xl:text-[64px]">
                 Work at Elabd
               </h3>
-              <h2 className="md:text-[48px] md:leading-[5rem] font-[600] text-3xl  ">
+              <h2 className="md:text-[40px]   2xl:text-[48px] md:leading-[3rem] 2xl:leading-[5rem] font-[600] text-3xl  ">
                 Join a team and
               </h2>
-              <h1 className="md:text-[48px] md:leading-[5rem]  font-[600] text-3xl ">
+              <h1 className="md:text-[40px]  2xl:text-[48px] md:leading-[3rem] 2xl:leading-[5rem]  font-[600] text-3xl ">
                 inspire the 
-                <span className="font-[700] text-[#21AC77] ml-2 md:ml-5 text-3xl md:text-[64px]">
+                <span className="font-[700] text-[#21AC77] ml-2 md:ml-5 text-3xl md:text-[40px] 2xl:text-[64px]">
                   work.
                 </span>
               </h1>
@@ -43,7 +43,7 @@ const Careers = () => {
             <img
               src="/images/career.png"
               alt="person1 img"
-              className="md:w-[40rem] md:h-[40rem] w-56 h-56  relative md:left-12 "
+              className="md:w-[35rem] md:h-[35rem]  2xl:w-[40rem] 2xl:h-[40rem] w-56 h-56  relative md:left-12 "
             />
           </div>
         </div>
@@ -52,21 +52,21 @@ const Careers = () => {
 
       <div className="md:p-16 p-4 mt-10">
           <h1 className="text-black text-lg md:text-[40px] font-[700]">How we Work</h1>
-          <p className=" text-2xl md:text-5xl font-[600] text-[#21AC77] md:w-[50%] mt-5">Elabd most enduring design may be Elabd itself</p>
-          <div className="flex flex-col lg:flex-row justify-between mt-10 gap-10 lg:gap-64">
-          <p className="text-black">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
-          <p className="text-black">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+          <p className=" text-2xl md:text-3xl 2xl:text-5xl font-[600] text-[#21AC77] 2xl:w-[50%] mt-5">Elabd most enduring design may be Elabd itself</p>
+          <div className="flex flex-col lg:flex-row justify-between mt-10 gap-10 lg:gap-40">
+          <p className="text-black text-sm 2xl:text-base">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+          <p className="text-black text-sm 2xl:text-base">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
           </div>
           <div className="flex  justify-center mt-10">
-          <p className="text-2xl md:text-5xl font-[600] text-center text-[#21AC77] md:w-[50%] mt-5">There is a Place here for every kind of brilliant</p>
+          <p className="text-2xl md:text-3xl 2xl:text-5xl font-[600] text-center text-[#21AC77] 2xl:w-[50%] mt-5">There is a Place here for every kind of brilliant</p>
           </div>
       </div>
 
 
       <div className='mt-10 py-10 lg:py-20 px-4 md:px-10 bg-white'>
-        <div className="flex flex-col gap-2 justify-center items-center md:gap-10  ">
-          <h1 className="text-xl  md:text-[48px] md:w-[50%] text-center md:leading-[3rem] text-black font-[700]">Explore a few to see which match your interest </h1>
-          <p className="text-[#9E9E9E] text-sm md:text-xl lg:text-2xl md:w-[70%] text-center font-[400]">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>
+        <div className="flex flex-col gap-2 justify-center items-center md:gap-5  ">
+          <h1 className="text-xl md:text-[32px]  2xl:text-[48px] md:w-[60%] text-center md:leading-[3rem] text-black font-[700]">Explore a few to see which match your interest </h1>
+          <p className="text-[#9E9E9E] text-sm md:text-xl 2xl:text-2xl md:w-[70%] text-center font-[400]">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>
         </div>
 
         <div className="mt-10  grid grid-flow-row md:grid-cols-2 gap-10 m-5 ">
@@ -92,7 +92,7 @@ const Careers = () => {
       <div className="  md:mt-10 mt-2 flex-col-reverse lg:flex-row justify-center items-center px-4 p-2 py-10 md:py-20 md:px-16  flex">
           <div className="flex flex-col justify-center mt-5 items-center lg:items-start  lg:w-[55%] gap-5 md:gap-10">
             <div className="font-inter text-black ">
-              <h3 className="font-[700] text-[#21AC77] text-xl md:leading-[4rem]  md:text-5xl">
+              <h3 className="font-[700] text-[#21AC77] text-xl 2xl:leading-[4rem] md:text-3xl  2xl:text-5xl">
               “We aren’t merely creating products. We’re creating something magical for the person who uses it.”
               </h3>
            
@@ -101,16 +101,17 @@ const Careers = () => {
             <div>
               <p className=" text-sm text-center md:text-start md:text-[16px] md:w-[70%] font-[400] text-[#31CB74]">
               Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. torquent per conubia nostra, 
+              Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. torquent per conubia nostra, 
               </p>
             </div>
 
      
           </div>
-          <div className="  lg:w-[45%] ">
+          <div className="  2xl:w-[45%] ">
             <img
               src="/images/career-home2.png"
               alt="person1 img"
-              className="md:w-[40rem] md:h-[40rem] w-56 h-56  relative md:left-12 "
+              className="md:w-[30rem] md:h-[30rem] 2xl:w-[40rem] 2xl:h-[40rem] w-56 h-56  relative md:left-12 "
             />
           </div>
         </div>

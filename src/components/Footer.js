@@ -5,16 +5,16 @@ const Footer = () => {
   return (
     <div className="bg-[#2F2F2F]  w-[97%] md:w-[99%] mb-1  mx-auto mt-0 p-4 xl:p-16">
       <div className="xl:space-x-24 flex flex-col xl:flex-row ">
-        <div className="xl:w-[20%] space-y-4 xl:space-y-16">
+        <div className="xl:w-[20%] space-y-4 md:space-y-8 2xl:space-y-16">
           <div className="flex gap-2   items-center">
             <img
               src="/images/logo.svg"
               alt="Getwick Logo"
-              className="w-16 h-16 "
+              className="w-10 h-10  2xl:w-16 2xl:h-16 "
             />
             <div className="z-20 flex flex-col">
               <p
-                className={`text-white   font-[700] leading-none  text-[32px]  `}
+                className={`text-white   font-[700] leading-none text-2xl  2xl:text-[32px]  `}
               >
                 Elabd Tech<span className="text-[#35D373]">.</span>
               </p>
@@ -23,35 +23,33 @@ const Footer = () => {
           <p className="text-sm 2xl:text-[16px]   font-[400] text-[#CFD3D7]">
             Working with client and community, We deliver masterpeices that
             create vibrant new design and ideas, attract people, and
-            encourage.Specialized in UI/UX, iOS Apps, Android Apps, Content
-            Writing, Animations and Website Development. We believe in quality
-            and client satisfaction and that is our passion throughout our
-            career.
+            encourage. Specialized in UI/UX, iOS Apps, Android Apps, Content
+            Writing, Animations and Website Development.
           </p>
 
           <div className="lg:mt-2 mt-5 flex gap-3">
             <Link href={'https://www.facebook.com/elabdtech'} target="_blank">
-            <div className="bg-gradient-to-r  from-[#35D373] to-[#1C9E76] p-2 lg:w-16 rounded-md">
-              <img src="/images/fb.png" className="  w-8 h-8 lg:w-16 lg:h-12" />
+            <div className="bg-gradient-to-r  from-[#35D373] to-[#1C9E76] p-2 2xl:w-16 rounded-md">
+              <img src="/images/fb.png" className="  w-8 h-8 2xl:w-16 2xl:h-12" />
             </div>
             </Link>
-            <div className="bg-gradient-to-r  from-[#35D373] to-[#1C9E76] p-2 lg:w-16 rounded-md">
+            <div className="bg-gradient-to-r  from-[#35D373] to-[#1C9E76] p-2 2xl:w-16 rounded-md">
               <img
                 src="/images/twetr.png"
-                className="  w-8 h-8 lg:w-16 lg:h-12"
+                className="  w-8 h-8 2xl:w-16 2xl:h-12"
               />
             </div>
-            <div className="bg-gradient-to-r  from-[#35D373] to-[#1C9E76] p-2 lg:w-16 rounded-md">
+            <div className="bg-gradient-to-r  from-[#35D373] to-[#1C9E76] p-2 2xl:w-16 rounded-md">
               <img
                 src="/images/insta.png"
-                className="  w-8 h-8 lg:w-16 lg:h-12"
+                className="  w-8 h-8 2xl:w-16 2xl:h-12"
               />
             </div>
           </div>
         </div>
 
         <div className="flex xl:w-[28%] justify-around">
-          <div className="md:w-[30%] flex flex-col gap-8 mt-10">
+          <div className="md:w-[30%] flex flex-col gap-4 2xl:gap-8 mt-10">
             <h1 className="font-[700] text-[16px] text-[#35D373] ">
               Useful Links
             </h1>
@@ -84,7 +82,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="lg:w-[35%] flex flex-col gap-8 mt-10 ">
+          <div className="lg:w-[40%] 2xl:w-[35%] flex flex-col gap-4 2xl:gap-8 mt-10 ">
             <h1 className="font-[700] text-[16px] text-[#35D373] ">About Us</h1>
             <Link href={"/privacy-policy"}>
               <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
@@ -110,7 +108,7 @@ const Footer = () => {
         </div>
 
         <div className="lg:space-y-10 space-y-5 xl:w-[35%] mt-10">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13285.303280601507!2d73.04058!3d33.6487186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df953b03d7e80f%3A0x7337a5a7cf12fb07!2sElabd%20Technologies!5e0!3m2!1sen!2s!4v1700639619568!5m2!1sen!2s"   className="w-full h-48 xl:h-full"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13285.303280601507!2d73.04058!3d33.6487186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df953b03d7e80f%3A0x7337a5a7cf12fb07!2sElabd%20Technologies!5e0!3m2!1sen!2s!4v1700639619568!5m2!1sen!2s"   className="w-full h-48 lg:h-full"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
       </div>

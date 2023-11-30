@@ -85,9 +85,9 @@ const Teams = () => {
             <div className='bg-white  relative overflow-hidden'>
                 <div className={` md:bg-[url('/images/team-back.png')]  md:h-[50rem] bg-no-repeat  lg:bg-cover  `}>
                 <Navbar />
-                  <div className='p-4 lg:p-16 gap-5 flex flex-col justify-end md:absolute bottom-0'>
+                  <div className='p-4 lg:p-16 gap-5 flex flex-col  justify-end md:absolute bottom-0'>
                       <h1 className='md:text-[48px]  2xl:text-[64px] text-xl text-black  md:text-white font-[600]'>Meet Our Team</h1>
-                      <p className='text-sm text-black md:text-base  2xl:text-[18px] lg:w-[50%] md:text-white font-[400]'>Meet our exceptional team, a diverse and dynamic group of individuals united by a passion for excellence and a drive for innovation. Each member brings a unique set of skills, experiences, and perspectives to the table, creating a rich tapestry of talent that defines our collaborative spirit. We thrive on creativity, problem-solving, and a shared commitment to achieving success. Our team is not just a collection of individuals; we are a tight-knit community that values communication, mutual support, and continuous learning. Together, we embark on a journey where challenges are opportunities, and success is a collective achievement. Get to know the faces behind the innovation, as we work hand in hand to make a lasting impact in our respective fields</p>
+                      <p className='text-sm text-black md:text-base  2xl:text-[18px] lg:w-[50%] md:text-white font-[400]'>Meet our exceptional team, a diverse and dynamic group of individuals united by a passion for excellence and a drive for innovation. Each member brings a unique set of skills, experiences, and perspectives to the table, creating a rich tapestry of talent that defines our collaborative spirit. Our team is not just a collection of individuals; we are a tight-knit community that values communication, mutual support, and continuous learning.</p>
                   </div>
                 </div>
                
