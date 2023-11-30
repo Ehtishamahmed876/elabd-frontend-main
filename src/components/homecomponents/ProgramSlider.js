@@ -32,7 +32,7 @@ const ProgramSlider = () => {
         {
             title: 'Social Media Marketing',
             description: "Boost your brand's online presence with Us' social media marketing. We make your brand shine across different platforms.",
-            image: "/images/social.png",
+            image: "/images/soical.png",
         },
         {
             title: 'Content Writing',
@@ -68,11 +68,11 @@ const ProgramSlider = () => {
 
                     <div  className="flex flex-col justify-center items-center w-[35rem] z-20 gap-4 md:gap-10 lg:py-24  bg-gradient-to-r p-10 rounded-3xl from-[#35D373] to-[#1C9E76]">
                         <div className="flex flex-col justify-center gap-3 items-center md:gap-16">
-                            <h1 className="text-white text-xl md:text-[32px]  font-[700]">{item.title}</h1>
+                            <h1 className="text-white text-xl md:text-2xl 2xl:text-[32px]  font-[700]">{item.title}</h1>
                             <div className="bg-white p-5 lg:p-10 rounded-xl">
                                 <img src={item.image} className='w-10 h-10 lg:w-13 lg:h-13' />
                             </div>
-                            <p className="text-white md:text-[16px] text-center xl:text-[20px] font-[400] md:w-80 lg:w-[27rem]">{item.description}</p>
+                            <p className="text-white md:text-[16px] text-center 2xl:text-[20px] font-[400] md:w-80 lg:w-[27rem]">{item.description}</p>
                         </div>
                         <div className="bg-white text-center md:w-40 rounded-3xl p-3">
                             <button className="font-[500] md:text-[16px] text-black">Read More</button>

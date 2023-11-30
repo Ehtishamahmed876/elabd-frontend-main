@@ -2,13 +2,20 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ProgramSlider from "@/components/homecomponents/Slider";
-import addReview from "@/firebase/firestore/clientReview";
+import addReview, { getReviews } from "@/firebase/firestore/clientReview";
 import { Button, Modal } from "flowbite-react";
 import React, { useState } from "react";
 import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage'
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 const Reviews = () => {
   const [openModal, setOpenModal] = useState(false);
- 
+  const [loading, setLoading] = useState(false)
+
+
+
+
   
   const [selectedImage, setSelectedImage] = useState(null);
   const [rating, setRating] = useState(0);
@@ -16,6 +23,8 @@ const Reviews = () => {
   const [companyName, setCompanyName] = useState('');
   const [designation, setDesignation] = useState('');
   const [review, setReview] = useState('');
+  const [email, setEmail] = useState('');
+
   const [imageUrl, setImageUrl] = useState(null);
 
   const handleModel = () => {
@@ -26,6 +35,7 @@ const Reviews = () => {
          setCompanyName('')
          setDesignation('')
          setReview('')
+         setEmail('')
   }
   
   const handleImageChange = (e) => {
@@ -42,10 +52,11 @@ const Reviews = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+    setLoading(true)
     // Check if all required fields are filled
-    if (!selectedImage || !name || !rating || !review) {
-      console.error('Please fill in all required fields.');
+    if (!selectedImage || !name || !rating || !review || !email ) {
+      toast.error('Please fill in all required fields.');
+      setLoading(false)
       return;
     }
   
@@ -64,6 +75,8 @@ const Reviews = () => {
       imageUrl: imageUrl,
       rating: rating,
       review: review,
+      email:email,
+      status:"pending",
       timestamp: currentDateTime.toISOString(),
     };
   
@@ -72,11 +85,12 @@ const Reviews = () => {
   
     // Check the result and handle accordingly
     if (result === 'Review added successfully!') {
-      console.log('Review added successfully!');
+      toast.success("Review added sucessfully")
+      setLoading(false)
       handleModel()
-      
     } else {
-      console.error(result); // This will log the error message
+      toast.error(result);
+      setLoading(false) // This will log the error message
     }
   };
   
@@ -106,18 +120,20 @@ const Reviews = () => {
   return (
     <div className="m-3 overflow-hidden">
       <div className="bg-white ">
+      <ToastContainer />
+
         <Navbar />
         <div className="flex flex-col  mx-4 md:mx-16 justify-center items-center py-5 md:py-20">
-          <h1 className="md:text-[48px] md:leading-[5rem]  font-[600] text-xl ">
-            <span className="font-[700] mr-4 text-[#21AC77] text-xl md:text-[64px]">
+          <h1 className="md:text-[40px]  2xl:text-[48px] md:leading-[5rem]  font-[600] text-xl ">
+            <span className="font-[700] mr-4 text-[#21AC77] text-xl md:text-[48px] 2xl:text-[64px]">
               Words
             </span>
             of Praise from Our
           </h1>
-          <h2 className=" font-[700] text-[#21AC77] text-xl md:text-[64px]">
+          <h2 className=" font-[700] text-[#21AC77] text-xl md:text-[48px] 2xl:text-[64px]">
             Valued Customers
           </h2>
-          <p className=" text-sm text-center  md:text-xl lg:w-[40%]  font-[400] text-[#C5C5C5] mt-5 md:mt-10">
+          <p className=" text-sm text-center  md:text-xl lg:w-[40%]  font-[400] text-[#8b8b8b] mt-5 md:mt-10">
           At Elabd Technologies, our success is measured by the satisfaction of our customers. Here are some heartfelt words from those who have entrusted us with their digital journey:
           </p>
           <div className="flex flex-col mt-5 md:mt-10 md:flex-row relative md:right-14 justify-start  items-center">
@@ -168,13 +184,13 @@ const Reviews = () => {
                     ></path>
                 </svg>
           <div className="m-4 md:m-16 pb-8 md:pb-20">
-            <h1 className="text-2xl md:text-6xl font-[700]">Reviews</h1>
+            <h1 className="text-2xl md:text-4xl 2xl:text-6xl font-[700]">Reviews</h1>
             <p>Discover what our clients have to say about Elabd Technologies </p>
           </div>
         </div>
       </div>
       <div className="m-4 md:m-16  my-8 md:my-32">
-        <ProgramSlider />
+        <ProgramSlider  />
       </div>
       <Footer />
 
@@ -234,6 +250,13 @@ const Reviews = () => {
               onChange={(e) => setName(e.target.value)}
               className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
             />
+              <input
+              type="email"
+              placeholder="Your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+            />
             <input
               type="text"
               placeholder="Company Name"
@@ -257,7 +280,9 @@ const Reviews = () => {
           </div>
         </div>
         <div className="flex justify-center items-center mt-5">
-        <Button className=" bg-gradient-to-r  from-[#35D373] to-[#1C9E76]" onClick={handleSubmit}>Submit</Button>
+        <Button disabled={loading} className=" bg-gradient-to-r  from-[#35D373] to-[#1C9E76]" onClick={handleSubmit}>{loading?"loading":"Submit"}</Button>
+        <ToastContainer />
+
 
         </div>
  

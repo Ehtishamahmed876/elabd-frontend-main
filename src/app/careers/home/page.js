@@ -26,7 +26,7 @@ const Careers = () => {
             </div>
 
             <div>
-              <p className=" text-sm text-center md:text-start md:text-xl font-[400] text-[#C5C5C5]">
+              <p className=" text-sm text-center md:text-start md:text-xl font-[400] text-[#8b8b8b]">
               Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. torquent per conubia nostra, 
               </p>
             </div>

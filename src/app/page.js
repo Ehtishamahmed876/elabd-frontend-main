@@ -22,26 +22,26 @@ export default function Home() {
 
       {/* Services components */}
       <div className='mt-10 lg:py-20 px-10'>
-        <div className="flex flex-col gap-2 justify-center items-center md:gap-10  ">
-          <h1 className="text-xl  md:text-[48px] text-black font-[700]">Our Services</h1>
-          <p className="text-[#9E9E9E] text-sm md:text-xl lg:text-xl md:w-[70%] text-center font-[400]">We provide a diverse array of solutions meticulously crafted to suit your distinct requirements. Our services span strategic consulting, seamless app and website development, and expertly designed UI/UX solutions, animations, and desktop software. Our dedicated team is committed to delivering nothing short of excellence, offering you a world of possibilities to elevate your digital journey.</p>
+        <div className="flex flex-col gap-2 justify-center items-center md:gap-5 2xl:gap-10  ">
+          <h1 className="text-xl md:text-[40px] 2xl:text-[48px] text-black font-[700]">Our Services</h1>
+          <p className="text-[#9E9E9E] text-sm md:text-lg 2xl:text-xl md:w-[70%] text-center font-[400]">We provide a diverse array of solutions meticulously crafted to suit your distinct requirements. Our services span strategic consulting, seamless app and website development, and expertly designed UI/UX solutions, animations, and desktop software. Our dedicated team is committed to delivering nothing short of excellence, offering you a world of possibilities to elevate your digital journey.</p>
         </div>
 
         <div className="mt-10 grid grid-flow-row md:grid-cols-2 gap-10 m-5">
           <Service icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6  lg:w-10 lg:h-10 text-white group-hover:text-black">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
-          </svg>} heading={"Ui & Ux Design"} paragraph={"Discover a new level of user interaction with Us' superior UI and UX design services. Our approach focuses on creating visually appealing and easy-to-use digital environments that captivate users. We prioritize seamless experiences to ensure your audience remains engaged and satisfied."} />
+          </svg>} heading={"Ui & Ux Design"} paragraph={"Our approach focuses on creating visually appealing and easy-to-use digital environments that captivate users. We prioritize seamless experiences to ensure your audience remains engaged and satisfied."} />
           <Service icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6  lg:w-10 lg:h-10 text-white group-hover:text-black">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-          </svg>} heading={"Flutter Development"} paragraph={"Experience the pinnacle of cross-platform development through Our' expert Flutter services. We specialize in blending performance and aesthetics, utilizing Flutter's capabilities to build standout applications. Our proficiency guarantees dynamic and feature-rich apps that offer an exceptional user experience."} />
+          </svg>} heading={"Flutter Development"} paragraph={" We specialize in blending performance and aesthetics, utilizing Flutter's capabilities to build standout applications. Our proficiency guarantees dynamic and feature-rich apps that offer an exceptional user experience."} />
           <Service icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6  lg:w-10 lg:h-10 text-white group-hover:text-black">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
           </svg>
-          } heading={"Web Design"} paragraph={"Elevate your online presence with Us' custom web design services. We specialize in creating visually stunning websites that not only catch the eye but also ensure smooth and efficient functionality. Our expertise lies in blending aesthetics with user-friendly design, ensuring an immersive experience for your audience.          "} />
+          } heading={"Web Design"} paragraph={"We specialize in creating websites that not only catch the eye but also ensure smooth and efficient functionality. Our expertise lies in building user-friendly design, ensuring an immersive experience for your audience.          "} />
           <Service icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6  lg:w-10 lg:h-10 text-white group-hover:text-black">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
           </svg>
-          } heading={"Animation Design"} paragraph={"Experience the power of storytelling through Our' animation design services. We bring creativity to life by transforming static ideas into captivating and engaging animations. Our team excels in crafting dynamic visuals that convey your message effectively and leave a lasting impact on your audience."} />
+          } heading={"Animation Design"} paragraph={" We bring creativity to life by transforming static ideas into captivating and engaging animations. Our team excels in crafting dynamic visuals that convey your message effectively and leave a lasting impact on your audience."} />
 
         </div>
       </div>
@@ -52,10 +52,10 @@ export default function Home() {
 
       <div className="md:mt-32 mt-16 flex flex-col justify-between xl:flex-row gap-4 md:gap-20 2xl:gap-60 font-inter p-2 px-4  md:p-16">
         <div className="flex flex-col flex-1 justify-center items-center xl:items-start gap-5 px-4  md:gap-10">
-          <h1 className="text-2xl  md:text-[48px] xl:text-[60px] font-[700] text-black">Other Programs</h1>
-          <p className="md:text-[16px] xl:text-2xl font-[400] text-[#B4B4B4] md:w-[24rem] lg:w-[36rem]">Discover a wide range of programs customized to fit your unique needs. Whether you're looking for innovative solutions, strategic advice, or the latest technology, we've got you covered. Our dedication to top-notch quality extends across various offerings aimed at enhancing your digital experience. Come join us on a journey where creativity meets practicality, and let's shape the future together.</p>
-          <div className="flex bg-black w-36 md:w-56 justify-end items-center rounded-[30px] gap-8  p-4">
-            <h1 className="md:text-2xl font-[500]  text-white">Explore</h1>
+          <h1 className="text-2xl  md:text-[40px] 2xl:text-[60px] font-[700] text-black">Other Programs</h1>
+          <p className="md:text-[16px] 2xl:text-2xl font-[400] text-[#8b8b8b] md:w-[24rem] lg:w-[36rem]">Discover a wide range of programs customized to fit your unique needs. Whether you're looking for innovative solutions, strategic advice, or the latest technology, we've got you covered. Our dedication to top-notch quality extends across various offerings aimed at enhancing your digital experience. Come join us on a journey where creativity meets practicality, and let's shape the future together.</p>
+          <div className="flex bg-black w-36 md:w-44 2xl:w-56 justify-end items-center rounded-[30px] gap-8  p-4">
+            <h1 className="2xl:text-2xl font-[500]  text-white">Explore</h1>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 w-6   md:w-8 md:h-8 text-white">
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
             </svg>
@@ -102,7 +102,7 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-2xl font-[700] text-black">Advance Designs</h1>
-                <p className="text-[16px] font-[400] text-[#A8A8A8] md:w-96">Elevate your projects with our cutting-edge design solutions tailored to push boundaries and set new standards. Our innovative approach ensures visually stunning and functionally advanced designs that captivate audiences</p>
+                <p className="text-[16px] font-[400] text-[#8b8b8b] md:w-96">Elevate your projects with our cutting-edge design solutions tailored to push boundaries and set new standards.</p>
               </div>
             </div>
 
@@ -114,7 +114,7 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-2xl font-[700] text-black">Creative Team</h1>
-                <p className="text-[16px] font-[400] text-[#A8A8A8] md:w-96">Meet our dynamic team of visionary minds dedicated to transforming ideas into impactful realities. With a blend of creativity and expertise, we craft solutions that resonate with innovation and excellence.</p>
+                <p className="text-[16px] font-[400] text-[#8b8b8b] md:w-96">Meet our dynamic team of visionary minds dedicated to transforming ideas into impactful realities.</p>
               </div>
             </div>
 
@@ -128,7 +128,7 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-2xl font-[700] text-black">Quick Support</h1>
-                <p className="text-[16px] font-[400] text-[#A8A8A8] md:w-96">Experience prompt and reliable assistance every step of the way. Our responsive support team is committed to swiftly addressing your queries and ensuring a seamless experience. Your satisfaction is our priority.</p>
+                <p className="text-[16px] font-[400] text-[#8b8b8b] md:w-96"> Our responsive support team is committed to swiftly addressing your queries and ensuring a seamless experience. </p>
               </div>
             </div>
 

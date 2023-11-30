@@ -40,7 +40,7 @@ const Projects = () => {
       <Navbar />
       <div className=" m-3 md:m-16">
         <div className=" flex flex-col gap-4">
-          <h1 className="text-3xl  md:text-6xl text-black font-[700]">Company Portfolio</h1>
+          <h1 className="text-3xl md:text-4xl  2xl:text-6xl text-black font-[700]">Company Portfolio</h1>
           <p>
           Welcome to the diverse world of Elabd Technologies, where innovation meets excellence. Explore our portfolio showcasing a spectrum of services and solutions
           </p>
@@ -74,10 +74,10 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.appName}
-                  className="lg:h-[40rem] 2xl:h-[50rem] h-96 rounded-lg"
+                  className=" lg:h-[30rem] 2xl:h-[40rem] h-96 rounded-lg"
                 />
 
-                <div className="hidden absolute group-hover:bg-black group-hover:bg-opacity-40 h-96 w-80 md:w-96 lg:w-[40rem] lg:h-[40rem] 2xl:w-[50rem] 2xl:h-[50rem] group-hover:block p-10 bottom-0">
+                <div className="hidden absolute group-hover:bg-black group-hover:bg-opacity-40 h-96 w-80 md:w-96 lg:w-[30rem] lg:h-[30rem] 2xl:w-[40rem] 2xl:h-[40rem] group-hover:block p-10 bottom-0">
                   <div>
                     <div className="flex items-center gap-3">
                       <h1 className="text-white font-[700] text-2xl">

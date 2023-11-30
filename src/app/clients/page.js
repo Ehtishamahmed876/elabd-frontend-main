@@ -68,17 +68,17 @@ const Client = () => {
 
           <div className="flex p-4 lg:px-16 items-center">
             <div className="flex-1">
-              <h1 className="lg:text-[64px] lg:leading-[5rem] text-lg font-[700] text-black">
+              <h1 className="2xl:text-[64px] md:text-[40px] md:leading-[3rem] 2xl:leading-[5rem] text-lg font-[700] text-black">
                 
-                <span className="font-[700] text-2xl lg:leading-[5rem] lg:text-[80px] text-[#21AC77]">
-                  Elabd Technologies
+                <span className="font-[700] text-2xl md:leading-[3rem] 2xl:leading-[5rem] md:text-[48px] 2xl:text-[80px] text-[#21AC77]">
+                  Elabd Technologies  
                 </span>
-                With Thousands of Satisfied
-                <span className="font-[700] text-2xl lg:leading-[5rem] lg:text-[80px] text-[#21AC77]">
+                With Thousands of Satisfied 
+                <span className="font-[700] text-2xl md:leading-[3rem] 2xl:leading-[5rem] md:text-[48px] 2xl:text-[80px] text-[#21AC77]">
                   Customers
                 </span>
               </h1>
-              <p className="text-xl font-[400] text-[#C5C5C5] ">
+              <p className="md:text-lg  2xl:text-xl font-[400] text-[#8b8b8b] ">
                 Experience the excellence that sets Elabd Technologies apart.
                 Our commitment to innovation, quality, and customer satisfaction
                 makes us your ideal digital partner. Join us today and discover
@@ -89,7 +89,7 @@ const Client = () => {
               <img
                 src="/images/client-side-img.png"
                 alt="side image"
-                className=" h-[50rem] "
+                className=" 2xl:h-[50rem] "
               />
             </div>
           </div>

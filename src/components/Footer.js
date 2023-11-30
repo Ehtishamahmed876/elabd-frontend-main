@@ -20,7 +20,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <p className="text-[16px]   font-[400] text-[#CFD3D7]">
+          <p className="text-sm 2xl:text-[16px]   font-[400] text-[#CFD3D7]">
             Working with client and community, We deliver masterpeices that
             create vibrant new design and ideas, attract people, and
             encourage.Specialized in UI/UX, iOS Apps, Android Apps, Content
@@ -56,53 +56,53 @@ const Footer = () => {
               Useful Links
             </h1>
             <Link href={"/"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">Home</p>
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">Home</p>
             </Link>
             <Link href={"/services"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
                 Services
               </p>
             </Link>
             <Link href={"/projects"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
                 Projects
               </p>
             </Link>
             <Link href={"/clients"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">Clients</p>
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">Clients</p>
             </Link>
             <Link href={"/reviews"}>
-              <p className="font-[500] text-[16px] text-[#c2d6eb]  ">Reviews</p>
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#c2d6eb]  ">Reviews</p>
             </Link>
             <Link href={"/team"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
                 Our Team
               </p>
             </Link>
             <Link href={"/careers/home"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">Careers</p>
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">Careers</p>
             </Link>
           </div>
 
           <div className="lg:w-[35%] flex flex-col gap-8 mt-10 ">
             <h1 className="font-[700] text-[16px] text-[#35D373] ">About Us</h1>
             <Link href={"/privacy-policy"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
                 Privacy Policy
               </p>
             </Link>
             <Link href={"/terms"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
                 Terms & Condition
               </p>
             </Link>
             <Link href={"/about-us"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
                 About Us
               </p>
             </Link>
             <Link href={"/contact-us"}>
-              <p className="font-[500] text-[16px] text-[#CFD3D7]  ">
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
                 Contact Us
               </p>
             </Link>
@@ -117,12 +117,12 @@ const Footer = () => {
       <div className="bg-[#21AC77] w-[95%] mt-10  md:mt-20 h-[1px]"></div>
 
       <div className="mt-10 w-[95%] flex flex-col-reverse xl:flex-row gap-5 md:gap-0 justify-between items-center">
-        <p className="text-[16px]   font-[400] text-[#CFD3D7]">
+        <p className="text-sm 2xl:text-[16px]   font-[400] text-[#CFD3D7]">
           Copyright @elabadtech 2020-2023
         </p>
 
         <div className="flex flex-col lg:flex-row gap-5 lg:gap-20">
-          <div className="flex gap-5">
+          <div className="flex gap-3 2xl:gap-5 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -143,11 +143,11 @@ const Footer = () => {
               />
             </svg>
 
-            <p className="text-[16px]   font-[400] text-[#CFD3D7]">
+            <p className=" text-sm 2xl:text-[16px]   font-[400] text-[#CFD3D7]">
               Office No 02, Munawar Plaza, I-10 Islmabad
             </p>
           </div>
-          <div className="flex gap-5">
+          <div className="flex gap-3 2xl:gap-5 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -163,11 +163,11 @@ const Footer = () => {
               />
             </svg>
 
-            <p className="text-[16px]   font-[400] text-[#CFD3D7]">
+            <p className="text-sm  2xl:text-[16px]   font-[400] text-[#CFD3D7]">
               elabdtech@gmail.com
             </p>
           </div>
-          <div className="flex gap-5">
+          <div className="flex gap-3 2xl:gap-5 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -183,7 +183,7 @@ const Footer = () => {
               />
             </svg>
 
-            <p className="text-[16px]   font-[400] text-[#CFD3D7]">
+            <p className="text-sm 2xl:text-[16px]   font-[400] text-[#CFD3D7]">
               +92 332 0661463
             </p>
           </div>

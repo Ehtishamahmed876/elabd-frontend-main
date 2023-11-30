@@ -9,16 +9,16 @@ const Intro = () => {
 
     <div className='  md:mt-10 mt-2 px-4 p-2 md:px-16  flex'>
 
-      <div className='flex flex-col justify-center items-center lg:items-start  lg:w-[55%] gap-5 md:gap-10'>
+      <div className='flex flex-col justify-center items-center lg:items-start  lg:w-[55%] gap-5 md:gap-5'>
 
         <div className='font-inter text-black '>
-          <h1 className='md:text-[48px] md:leading-[5rem]  font-[600] text-xl '><span className='font-[700] text-[#21AC77] text-xl md:text-[64px]'>Build</span> Your Dream </h1>
-          <h2 className='md:text-[48px] md:leading-[5rem] font-[600] text-xl  '>App & Website With</h2>
-          <h3 className='font-[700] text-[#21AC77] text-xl md:leading-[5rem]  md:text-[64px]'>Elabd Technologies</h3>
+          <h1 className='2xl:text-[48px] md:text-[40px] md:leading-[52px] 2xl:leading-[5rem]  font-[600] text-xl '><span className='font-[700] text-[#21AC77] text-xl md:text-[48px] 2xl:text-[64px]'>Build</span> Your Dream </h1>
+          <h2 className='2xl:text-[48px] md:text-[40px] md:leading-[52px] 2xl:leading-[5rem] font-[600] text-xl  '>App & Website With</h2>
+          <h3 className='font-[700] text-[#21AC77] text-xl md:leading-[52px] 2xl:leading-[5rem] md:text-[48px]   2xl:text-[64px]'>Elabd Technologies</h3>
         </div>
 
         <div>
-          <p className=' text-sm text-center md:text-start md:text-xl font-[400] text-[#C5C5C5]'>Welcome to Elabd Technologies. We specialize in crafting innovative apps and websites that amplify your digital presence. With cutting-edge technology and creative design, we bring your vision to life. Partner with us to transform your ideas into impactful solutions that leave a lasting mark. Let's elevate your digital footprint together.</p>
+          <p className=' text-sm text-center md:text-start md:text-lg 2xl:text-xl font-[400] text-[#7a7a7a]'> We specialize in crafting innovative apps and websites that amplify your digital presence. With cutting-edge technology and creative design, we bring your vision to life. Let's elevate your digital footprint together.</p>
         </div>
 
         <div className='flex gap-3'>

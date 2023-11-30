@@ -7,10 +7,10 @@ const Service = ({icon, heading, paragraph}) => {
    {icon}
 </div>
 
-  <h1 className='lg:text-[32px] font-[700] text-black group-hover:text-white'>
+  <h1 className='text-lg 2xl:text-[24px] font-[700] text-black group-hover:text-white'>
     {heading}
   </h1>
-  <p className='md:text-[16px] lg:text-lg  font-[400] text-[#BFBFBF] group-hover:text-white w-full lg:w-[30rem] text-center'>
+  <p className='text-[16px] 2xl:text-lg  font-[400] text-[#8b8b8b] group-hover:text-white w-full lg:w-[30rem] 2xl:w-[36rem] text-center'>
    {paragraph}
   </p>
 </div>

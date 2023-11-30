@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import { getReviews } from "@/firebase/firestore/clientReview";
+import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -22,7 +23,7 @@ const ProgramSlider = () => {
     },
   };
 
-  const reviews = [
+  const reviews2 = [
     {
       id: 1,
       name: "Jack Sparrow",
@@ -62,6 +63,26 @@ const ProgramSlider = () => {
     // Add more review objects as needed
   ];
 
+
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      const reviewsData = await getReviews();
+    console.log("review",reviewsData)
+      
+      setReviews(reviewsData);
+    };
+    fetchReviews();
+  }, []);
+
+
+  const formatTimestamp = (timestamp) => {
+    const date = new Date(timestamp);
+  
+    return date.toLocaleDateString(); // Adjust the format as needed
+  };
+
   const CustomRightArrow = ({ onClick, ...rest }) => {
     const {
         onMove,
@@ -92,7 +113,7 @@ const CustomLeftArrow = ({ onClick, ...rest }) => {
     <Carousel
       swipeable={false}
       draggable={false}
-      showDots={true}
+      showDots={false}
       responsive={responsive}
       ssr={true} // means to render carousel on server-side.
       infinite={true}
@@ -115,19 +136,19 @@ const CustomLeftArrow = ({ onClick, ...rest }) => {
         {reviews.map((review) => (
           <div key={review.id} className="flex flex-col gap-3 justify-center items-center">
             <img
-              src={review.image}
+              src={review.imageUrl}
               alt={review.name}
-              className="w-24 md:w-48 rounded-full"
+              className="w-24 h-24 md:w-48 md:h-48 rounded-full"
             />
             <h1 className="text-2xl font-[700]">{review.name}</h1>
-            <p>{review.date}</p>
+            <p>{formatTimestamp(review.timestamp)}</p>
             <div className="flex space-x-1">
-              {Array.from({ length: review.stars }).map((_, index) => (
+              {Array.from({ length: review.rating }).map((_, index) => (
                 <span key={index} className="text-yellow-400 text-4xl">&#9733;</span>
               ))}
             </div>
-            <p className="text-xl font-[600] text-center">{review.experience}</p>
-            <p className="text-center text-sm md:text-base">{review.comment}</p>
+            <p className="text-xl font-[600] text-center">{review.designation}</p>
+            <p className="text-center text-sm md:text-base">{review.review}</p>
           </div>
         ))}
       
