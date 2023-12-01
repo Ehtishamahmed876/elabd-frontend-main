@@ -12,14 +12,14 @@ const Navbar = () => {
   return (
     <nav className=" px-6  py-6 md:px-10 xl:px-16 bg-black bg-opacity-10  font-inter flex justify-between  items-center ">
       {/* Left side */}
+      <Link href={"/"}>
+
       <div className="flex gap-2   items-center">
-        <Link href={"/"}>
           <img
             src="/images/logo.svg"
             alt="Getwick Logo"
             className="2xl:w-16 2xl:h-16 w-10 h-10"
           />
-        </Link>
 
         <div className="z-20 flex flex-col">
           <p
@@ -33,7 +33,10 @@ const Navbar = () => {
             Serving the World
           </p>
         </div>
+
       </div>
+      </Link>
+
 
       {/* Links */}
       <div className="hidden xl:block bg-white px-5 xl:px-10 rounded-full">

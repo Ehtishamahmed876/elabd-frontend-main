@@ -367,38 +367,32 @@ const About = () => {
                   alt={"hello"}
                   className="w-28 rounded-full h-auto"
                 />
-                <div className="p-4 flex gap-2 flex-col items-center">
+                <div className="p-4 flex gap-4 flex-col items-center">
                   <h2 className=" text-xl lg:text-2xl font-[700]">
                     Waqas Ahmed
                   </h2>
                   <p className="text-[#21AC77] font-[600]">CEO & Founder</p>
-                  <p className="lg:text-[16px] font-[500] text-[#818181]">
-                    Waqas Ahmed assumes the pivotal roles of Web Developer and
-                    astute Team Lead, wielding a profound understanding of web
-                    development intricacies. With a proven track record in
-                    steering web projects to success, Waqas empowers his team
-                    through visionary guidance, fostering a culture of
-                    creativity and precision. His dedication to delivering
-                    cutting-edge web solutions, coupled with a knack for
-                    harnessing the latest technologies, ensures our team
-                    consistently delivers impactful digital experiences.
+                  <p className="text-sm  2xl:text-[16px] font-[500] text-center text-[#818181]">
+                    Waqas, the visionary CEO and Founder of Elabd, brings
+                    a wealth of expertise in management and sales to the helm of
+                    our organization. With a keen understanding of strategic
+                    leadership, Waqas has successfully navigated the
+                    complexities of the business landscape, steering Elabd
+                    towards innovation and growth. Under his guidance, Elabd
+                    thrives as a testament to his commitment to excellence,
+                    leadership, and the pursuit of transformative success.
                   </p>
                   <div className="flex gap-3 ">
-                    <Link href={"https://github.com/abbasDD"} target="_blank">
+                    <Link href={"https://instagram.com/"} target="_blank">
                       <img src="/images/insta-green.png" alt="image" />
                     </Link>
                     <Link
-                      href={
-                        "https://www.linkedin.com/in/ghulam-abbas-8440a0b5/"
-                      }
+                      href={"https://www.linkedin.com/in/waqas-ahmed-7b97211a/"}
                       target="_blank"
                     >
                       <img src="/images/linkden-green.png" alt="image" />
                     </Link>
-                    <Link
-                      href={"https://www.behance.net/abbasdd"}
-                      target="_blank"
-                    >
+                    <Link href={"https://www.twitter.com/"} target="_blank">
                       <img src="/images/twiter-green.png" alt="image" />
                     </Link>
                   </div>
@@ -412,23 +406,43 @@ const About = () => {
                   alt={"hello"}
                   className="w-28 rounded-full h-auto"
                 />
-                <div className="p-4 flex gap-2 flex-col items-center">
+                <div className="p-4 flex gap-4 flex-col items-center">
                   <h2 className=" text-xl lg:text-2xl font-[700]">
-                  Abdul Shakoor
+                    Abdul Shakoor
                   </h2>
-                  <p className="text-[#21AC77] font-[600]">TEAM LEAD / MOBILE APPS DEVELOPER</p>
-                  <p className=' lg:text-[16px] font-[500] text-[#818181]'>Abdul Shakoor brings a multifaceted skill set to the fore, excelling as a Project Manager, Mobile Apps Developer, and esteemed Team Lead. With a passion for delivering excellence in every facet of app development, Abdul adeptly navigates complex projects, leveraging his leadership finesse to inspire collaboration and drive innovation. His unwavering commitment to quality ensures that our team consistently delivers bespoke mobile solutions that resonate with users and exceed client expectations.</p>
-                            <div className='flex gap-3 '>
-                                <Link href={'https://www.instagram.com/abdulshakoormcs/'} target='_blank'>
-                                <img src='/images/insta-green.png' alt='image' />
-                                </Link>
-                                <Link href={'https://www.linkedin.com/in/abdulshakoormcs/'} target='_blank'>
-                                <img src='/images/linkden-green.png' alt='image' />
-                                </Link>
-                                <Link href={'https://twitter.com/abdulshakoormcs'} target='_blank'>
-                                <img src='/images/twiter-green.png' alt='image' />
-                                </Link>
-                             </div>
+                  <p className="text-[#21AC77] font-[600]">
+                    TEAM LEAD / FLUTTER DEVELOPER
+                  </p>
+                  <p className="text-sm 2xl:text-[16px] text-center font-[500] text-[#818181]">
+                    Abdul Shakoor, a versatile professional, serves as a Project
+                    Manager, Mobile Apps Developer, and accomplished Team Lead.
+                    Excelling in his role, Abdul effectively leads complex
+                    projects, fostering collaboration and driving innovation.
+                    His passion for excellence in mobile apps development, coupled with
+                    leadership finesse, ensures our team consistently delivers
+                    high-quality, tailored mobile solutions that surpass client
+                    expectations.
+                  </p>
+                  <div className="flex gap-3 ">
+                    <Link
+                      href={"https://www.instagram.com/abdulshakoormcs/"}
+                      target="_blank"
+                    >
+                      <img src="/images/insta-green.png" alt="image" />
+                    </Link>
+                    <Link
+                      href={"https://www.linkedin.com/in/abdulshakoormcs/"}
+                      target="_blank"
+                    >
+                      <img src="/images/linkden-green.png" alt="image" />
+                    </Link>
+                    <Link
+                      href={"https://twitter.com/abdulshakoormcs"}
+                      target="_blank"
+                    >
+                      <img src="/images/twiter-green.png" alt="image" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -439,25 +453,26 @@ const About = () => {
                   alt={"hello"}
                   className="w-28 rounded-full h-auto"
                 />
-                <div className="p-4 flex gap-2 flex-col items-center">
+                <div className="p-4 flex gap-4 flex-col items-center">
                   <h2 className=" text-xl lg:text-2xl font-[700]">
-                  Ghulam Abbas
+                    Ghulam Abbas
                   </h2>
-                  <p className="text-[#21AC77] font-[600]">TEAM LEAD / WEB DEVELOPER</p>
-                  <p className="lg:text-[16px] font-[500] text-[#818181]">
-                  Ghulam Abbas assumes the pivotal roles of Web Developer and
-                    astute Team Lead, wielding a profound understanding of web
-                    development intricacies. With a proven track record in
-                    steering web projects to success, Ghulam Abbas empowers his team
-                    through visionary guidance, fostering a culture of
-                    creativity and precision. His dedication to delivering
-                    cutting-edge web solutions, coupled with a knack for
-                    harnessing the latest technologies, ensures our team
-                    consistently delivers impactful digital experiences.
+                  <p className="text-[#21AC77] font-[600]">
+                    TEAM LEAD / WEB DEVELOPER
+                  </p>
+                  <p className="text-sm 2xl:text-[16px] text-center font-[500] text-[#818181]">
+                    Ghulam Abbas, a Web Developer and adept Team Lead, leverages
+                    a deep understanding of web development intricacies. With a
+                    proven track record of steering successful web projects, he
+                    empowers his team through visionary guidance, fostering a
+                    culture of creativity and precision. Dedicated to delivering
+                    cutting-edge web solutions and harnessing the latest
+                    technologies, Ghulam ensures our team consistently creates
+                    impactful digital experiences.
                   </p>
                   <div className="flex gap-3 ">
                     <Link href={"https://github.com/abbasDD"} target="_blank">
-                      <img src="/images/insta-green.png" alt="image" />
+                      <img src="/images/github.png" alt="image" />
                     </Link>
                     <Link
                       href={
@@ -471,7 +486,7 @@ const About = () => {
                       href={"https://www.behance.net/abbasdd"}
                       target="_blank"
                     >
-                      <img src="/images/twiter-green.png" alt="image" />
+                      <img src="/images/BehanceLogo.png" alt="image" />
                     </Link>
                   </div>
                 </div>

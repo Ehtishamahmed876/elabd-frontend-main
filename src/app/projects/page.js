@@ -51,7 +51,7 @@ const Projects = () => {
             {categories.map((category, index) => (
               <button
                 key={index}
-                className={`px-10 lg:px-4 py-3 lg:py-2 xl:px-10 xl:py-33  text-xl text-[#21AC77]  bg-[#DAF9D7] rounded-full ${
+                className={`px-10 lg:px-4 py-3 lg:py-2 xl:px-10 xl:py-33  2xl:text-xl text-[#21AC77]  bg-[#DAF9D7] rounded-full ${
                   selectedCategory === category
                     ? "bg-gradient-to-r from-[#35D373] to-[#1C9E76] text-white"
                     : ""

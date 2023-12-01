@@ -34,10 +34,10 @@ const ReviewSlider = ({ imgsrc, heading, para, subheading }) => {
             showArrows={true}
             
         >
-               <div className=" md:w-[100%]  flex  flex-col md:flex-row items-center justify-center overflow-hidden">
-                <div className="md:w-[100%]  flex flex-col md:flex-row justify-center items-center bg-[#DCFFDB] p-5 rounded-lg overflow-hidden">
+               <div className=" md:w-[100%]  flex  flex-col lg:flex-row items-center justify-center overflow-hidden">
+                <div className="md:w-[100%]  flex flex-col lg:flex-row justify-center items-center bg-[#DCFFDB] p-5 rounded-lg overflow-hidden">
 
-                    <div className="flex gap-2 w-[70%]  flex-col md:flex-row justify-center md:w-full p-5 items-center ">
+                    <div className="flex gap-2 w-[70%]  flex-col lg:flex-row justify-center md:w-full p-5 items-center ">
                         <div className="w-[100%">
                         <img src="/images/review1.png" className="     bg-contain " />
 
@@ -45,7 +45,7 @@ const ReviewSlider = ({ imgsrc, heading, para, subheading }) => {
                     <div className="flex md:w-[100%] flex-col justify-center gap-3 md:gap-0 items-center">
 
                     <p className="lg:text-[64px] text-[30px] font-[700] text-black">''</p>
-                    <p className="lg:text-xl font-[500] text-black text-sm w-72 md:w-full">The team at Elabd Technologies exceeded our expectations. Their attention to detail and commitment to delivering high-quality results were evident throughout the entire process. We highly recommend their services.</p>
+                    <p className="lg:text-xl font-[500] text-black text-sm w-96 lg:w-full">The team at Elabd Technologies exceeded our expectations. Their attention to detail and commitment to delivering high-quality results were evident throughout the entire process. We highly recommend their services.</p>
                     <div className="flex space-x-1">
                         {stars}
                     </div>
@@ -58,10 +58,10 @@ const ReviewSlider = ({ imgsrc, heading, para, subheading }) => {
             </div>
 
             
-            <div className=" md:w-[100%]  flex  flex-col md:flex-row items-center justify-center overflow-hidden">
-                <div className="md:w-[100%]  flex flex-col md:flex-row justify-center items-center bg-[#DCFFDB] p-5 rounded-lg overflow-hidden">
+            <div className=" md:w-[100%]  flex  flex-col lg:flex-row items-center justify-center overflow-hidden">
+                <div className="md:w-[100%]  flex flex-col lg:flex-row justify-center items-center bg-[#DCFFDB] p-5 rounded-lg overflow-hidden">
 
-                    <div className="flex gap-2 w-[70%]  flex-col md:flex-row justify-center md:w-full p-5 items-center ">
+                    <div className="flex gap-2 w-[70%]  flex-col lg:flex-row justify-center md:w-full p-5 items-center ">
                         <div className="w-[100%">
                         <img src="/images/review1.png" className="     bg-contain " />
 
@@ -69,7 +69,7 @@ const ReviewSlider = ({ imgsrc, heading, para, subheading }) => {
                     <div className="flex md:w-[100%] flex-col justify-center gap-3 md:gap-0 items-center">
 
                     <p className="lg:text-[64px] text-[30px] font-[700] text-black">''</p>
-                    <p className="lg:text-xl font-[500] text-black text-sm w-72 md:w-full">The team at Elabd Technologies exceeded our expectations. Their attention to detail and commitment to delivering high-quality results were evident throughout the entire process. We highly recommend their services.</p>
+                    <p className="lg:text-xl font-[500] text-black text-sm w-96 lg:w-full ">The team at Elabd Technologies exceeded our expectations. Their attention to detail and commitment to delivering high-quality results were evident throughout the entire process. We highly recommend their services.</p>
                     <div className="flex space-x-1">
                         {stars}
                     </div>

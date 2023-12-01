@@ -28,23 +28,26 @@ const Footer = () => {
           </p>
 
           <div className="lg:mt-2 mt-5 flex gap-3">
-            <Link href={'https://www.facebook.com/elabdtech'} target="_blank">
-            <div className="bg-gradient-to-r  from-[#35D373] to-[#1C9E76] p-2 2xl:w-16 rounded-md">
-              <img src="/images/fb.png" className="  w-8 h-8 2xl:w-16 2xl:h-12" />
-            </div>
+            <Link href={'https://dribbble.com/elabdtech'} target="_blank">
+            
+              <img src="/images/Dribble.png" className="  w-8 h-8 md:w-12 md:h-12 2xl:w-16 2xl:h-12" />
+            
             </Link>
-            <div className="bg-gradient-to-r  from-[#35D373] to-[#1C9E76] p-2 2xl:w-16 rounded-md">
-              <img
-                src="/images/twetr.png"
-                className="  w-8 h-8 2xl:w-16 2xl:h-12"
-              />
-            </div>
-            <div className="bg-gradient-to-r  from-[#35D373] to-[#1C9E76] p-2 2xl:w-16 rounded-md">
-              <img
-                src="/images/insta.png"
-                className="  w-8 h-8 2xl:w-16 2xl:h-12"
-              />
-            </div>
+            <Link href={'https://www.behance.net/elabdtechnol'} target="_blank">
+            
+            <img src="/images/behance.png" className="  w-8 h-8 md:w-12 md:h-12 2xl:w-16 2xl:h-12" />
+          
+          </Link>
+          <Link href={'https://www.pinterest.com/elabdtech/'} target="_blank">
+            
+            <img src="/images/pinterest.png" className="  w-8 h-8 md:w-12 md:h-12 2xl:w-16 2xl:h-12" />
+          
+          </Link>
+          {/* <Link href={'https://www.facebook.com/elabdtech'} target="_blank">
+            
+            <img src="/images/linkden.png" className="  w-8 h-8 md:w-12 md:h-12 2xl:w-16 2xl:h-12" />
+          
+          </Link> */}
           </div>
         </div>
 

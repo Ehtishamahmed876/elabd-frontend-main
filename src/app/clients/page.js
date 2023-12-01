@@ -92,7 +92,7 @@ const Client = () => {
           </div>
         </div>
         <div className="hidden lg:block">
-          <div className="flex 2xl:gap-20 gap-5 m-3 2xl:px-16  relative bottom-28">
+          <div className="flex 2xl:gap-20 gap-5 m-3 2xl:px-16  relative xl:bottom-28">
             <div className="bg-white flex flex-col items-center shadow-lg gap-5  xl:p-8 rounded-lg group hover:bg-gradient-to-r from-[#35D373]  to-[#1C9E76]">
               <img src="/images/client1.png" alt="client" />
               <h1 className="text-xl font-[700] text-black group-hover:text-white">

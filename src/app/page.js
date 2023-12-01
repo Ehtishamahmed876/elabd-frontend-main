@@ -54,13 +54,13 @@ export default function Home() {
         <div className="flex flex-col flex-1 justify-center items-center xl:items-start gap-5 px-4  md:gap-10">
           <h1 className="text-2xl  md:text-[40px] 2xl:text-[60px] font-[700] text-black">Other Programs</h1>
           <p className="md:text-[16px] 2xl:text-2xl font-[400] text-[#8b8b8b] md:w-[24rem] lg:w-[36rem]">Discover a wide range of programs customized to fit your unique needs. Whether you're looking for innovative solutions, strategic advice, or the latest technology, we've got you covered. Our dedication to top-notch quality extends across various offerings aimed at enhancing your digital experience. Come join us on a journey where creativity meets practicality, and let's shape the future together.</p>
-          <div className="flex bg-black w-36 md:w-44 2xl:w-56 justify-end items-center rounded-[30px] gap-8  p-4">
+          {/* <div className="flex bg-black w-36 md:w-44 2xl:w-56 justify-end items-center rounded-[30px] gap-8  p-4">
             <h1 className="2xl:text-2xl font-[500]  text-white">Explore</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 w-6   md:w-8 md:h-8 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="   md:w-8 md:h-8 text-white">
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
             </svg>
 
-          </div>
+          </div> */}
         </div>
         <div className="w-full flex-1  overflow-hidden">
           <div>
@@ -83,15 +83,11 @@ export default function Home() {
 
 
       <div className="mt-20 md:p-16 bg-white">
-        <div className="flex flex-col  xl:flex-row md:justify-between ">
+        <div className="flex flex-col  xl:flex-row md:justify-between md:items-center ">
           <div className=" relative mt-5 px-4">
-            <div className="bg-[#31CA74] h-80 w-80 m-1 md:h-[35rem] md:w-[35rem] absolute  rounded-full opacity-[18%]">
-
-            </div>
-            <img src="/images/flyman.png" alt="person1 img" className="w-full h-full   relative md:left-20 bottom-8" />
-
+            <img src="/images/chos-side.png" alt="person1 img" className="" />
           </div>
-          <div className="p-3 px-4  md:p-10 xl:mt-40">
+          <div className="p-3 px-4  md:p-10 ">
             <h1 className=" text-xl text-center xl:text-start  md:text-[36px] font-[700]">Why Should Choose us?</h1>
             <div className="flex justify-center items-center xl:justify-start xl:items-start gap-3 mt-10">
               <div className='bg-gradient-to-r p-3 rounded-3xl from-[black] to-[black] cursor-pointer hover:bg-gradient-to-r  hover:from-[#35D373] hover:to-[#1C9E76]'>

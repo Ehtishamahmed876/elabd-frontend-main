@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Service from "@/components/homecomponents/Service";
+import Link from "next/link";
 import React from "react";
 
 const Careers = () => {
@@ -8,7 +9,7 @@ const Careers = () => {
     <div className="m-3 overflow-hidden">
       <div className="bg-white ">
         <Navbar />
-        <div className="  md:mt-10 mt-2 px-4 p-2 py-10 md:py-20 md:px-16  flex flex-col md:flex-row justify-between items-center">
+        <div className="  md:mt-10 mt-2 px-4 p-2 py-10 md:py-20 md:px-16  flex flex-col lg:flex-row justify-between items-center">
           <div className="flex flex-col justify-center items-center lg:items-start  lg:w-[55%] gap-5 2xl:gap-10">
             <div className="font-inter text-black ">
               <h3 className="font-[700] text-[#21AC77] text-3xl md:leading-[3rem] 2xl:leading-[5rem] md:text-[48px]  2xl:text-[64px]">
@@ -27,15 +28,23 @@ const Careers = () => {
 
             <div>
               <p className=" text-sm text-center md:text-start md:text-xl font-[400] text-[#8b8b8b]">
-              Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. torquent per conubia nostra, 
+              "Embrace the spirit of collaboration at Elabd as we join forces to create a dynamic and inspiring work environment. Together, we'll fuel innovation and elevate our collective potential, fostering a culture where every team member is empowered to contribute their unique talents. Let's inspire the work and shape a future of success at Elabd." 
               </p>
             </div>
 
             <div className="flex gap-3">
+                <Link href={'https://dribbble.com/elabdtech'} target="_blank" >
                 <img src="/images/Dribble.png" alt="dribble" />
+                </Link>
+                <Link href={'https://www.behance.net/elabdtechnol'} target="_blank" >
                 <img src="/images/behance.png" alt="dribble" />
+                </Link>
+                <Link href={'https://www.pinterest.com/elabdtech/'} target="_blank" >
                 <img src="/images/pinterest.png" alt="dribble" />
+                </Link>
+                <Link href={'https://www.linkedin.com/company/elabd-technologies'} target="_blank" >
                 <img src="/images/linkden.png" alt="dribble" />
+                </Link>
 
             </div>
           </div>
@@ -43,7 +52,7 @@ const Careers = () => {
             <img
               src="/images/career.png"
               alt="person1 img"
-              className="md:w-[35rem] md:h-[35rem]  2xl:w-[40rem] 2xl:h-[40rem] w-56 h-56  relative md:left-12 "
+              className="md:w-[30rem] md:h-[30rem]  2xl:w-[40rem] 2xl:h-[40rem] w-56 h-56  relative md:left-12 "
             />
           </div>
         </div>
@@ -54,8 +63,8 @@ const Careers = () => {
           <h1 className="text-black text-lg md:text-[40px] font-[700]">How we Work</h1>
           <p className=" text-2xl md:text-3xl 2xl:text-5xl font-[600] text-[#21AC77] 2xl:w-[50%] mt-5">Elabd most enduring design may be Elabd itself</p>
           <div className="flex flex-col lg:flex-row justify-between mt-10 gap-10 lg:gap-40">
-          <p className="text-black text-sm 2xl:text-base">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
-          <p className="text-black text-sm 2xl:text-base">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+          <p className="text-black text-sm 2xl:text-base">At Elabd, our work process for hiring an employee reflects our commitment to enduring design. We begin by meticulously crafting job descriptions that resonate with our core values and the specific needs of the role. Our recruitment process prioritizes a comprehensive evaluation, ensuring a seamless fit between the candidate's skills, experience, and our organizational culture. With an emphasis on collaboration and innovation, we engage in thorough interviews, assessments, and team interactions to build a workforce that not only enhances Elabd's enduring design but also contributes to its ongoing success.</p>
+          <p className="text-black text-sm 2xl:text-base">At Elabd, our work process for hiring an employee reflects our commitment to enduring design. We begin by meticulously crafting job descriptions that resonate with our core values and the specific needs of the role. Our recruitment process prioritizes a comprehensive evaluation, ensuring a seamless fit between the candidate's skills, experience, and our organizational culture. With an emphasis on collaboration and innovation, we engage in thorough interviews, assessments, and team interactions to build a workforce that not only enhances Elabd's enduring design but also contributes to its ongoing success.</p>
           </div>
           <div className="flex  justify-center mt-10">
           <p className="text-2xl md:text-3xl 2xl:text-5xl font-[600] text-center text-[#21AC77] 2xl:w-[50%] mt-5">There is a Place here for every kind of brilliant</p>
@@ -65,8 +74,8 @@ const Careers = () => {
 
       <div className='mt-10 py-10 lg:py-20 px-4 md:px-10 bg-white'>
         <div className="flex flex-col gap-2 justify-center items-center md:gap-5  ">
-          <h1 className="text-xl md:text-[32px]  2xl:text-[48px] md:w-[60%] text-center md:leading-[3rem] text-black font-[700]">Explore a few to see which match your interest </h1>
-          <p className="text-[#9E9E9E] text-sm md:text-xl 2xl:text-2xl md:w-[70%] text-center font-[400]">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>
+          <h1 className="text-xl md:text-[32px]  2xl:text-[48px] md:w-[70%] text-center md:leading-[3rem] text-black font-[700]">Explore a few to see which match your interest </h1>
+          <p className="text-[#9E9E9E] text-sm md:text-xl 2xl:text-2xl md:w-[70%] text-center font-[400]">Submitting an application is more than just a formality – it's your first step towards joining a team that values individuality, fosters innovation, and shapes the future of enduring design. </p>
         </div>
 
         <div className="mt-10  grid grid-flow-row md:grid-cols-2 gap-10 m-5 ">
@@ -100,8 +109,7 @@ const Careers = () => {
 
             <div>
               <p className=" text-sm text-center md:text-start md:text-[16px] md:w-[70%] font-[400] text-[#31CB74]">
-              Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. torquent per conubia nostra, 
-              Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. torquent per conubia nostra, 
+              "At Elabd, our mission goes beyond product creation; we are weaving enchantment for every individual who interacts with our offerings. Each endeavor is infused with a touch of magic, meticulously crafted to elevate experiences and evoke a sense of wonder. By merging innovation with a sprinkle of enchantment, we strive to go beyond expectations, leaving a lasting and magical impression on the lives of those who engage with our creations. Join us in the art of crafting not just products, but moments of pure magic for our users."              Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. torquent per conubia nostra, 
               </p>
             </div>
 
