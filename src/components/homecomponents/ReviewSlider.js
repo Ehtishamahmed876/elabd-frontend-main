@@ -45,8 +45,8 @@ const ReviewSlider = ({ imgsrc, heading, para, subheading }) => {
                     <div className="flex md:w-[100%] flex-col justify-center gap-3 md:gap-0 items-center">
 
                     <p className="lg:text-[64px] text-[30px] font-[700] text-black">''</p>
-                    <p className="lg:text-xl font-[500] text-black text-sm w-96 lg:w-full">The team at Elabd Technologies exceeded our expectations. Their attention to detail and commitment to delivering high-quality results were evident throughout the entire process. We highly recommend their services.</p>
-                    <div className="flex space-x-1">
+                    <p className="lg:text-xl font-[500] text-black text-sm w-72 md:w-60 lg:w-full">The team at Elabd Technologies exceeded our expectations. Their attention to detail and commitment to delivering high-quality results were evident throughout the entire process. We highly recommend their services.</p>
+                    <div className="flex space-x-1"> 
                         {stars}
                     </div>
                     <h1 className="text-black font-[600] text-[24px]">John Wick</h1>
@@ -69,7 +69,7 @@ const ReviewSlider = ({ imgsrc, heading, para, subheading }) => {
                     <div className="flex md:w-[100%] flex-col justify-center gap-3 md:gap-0 items-center">
 
                     <p className="lg:text-[64px] text-[30px] font-[700] text-black">''</p>
-                    <p className="lg:text-xl font-[500] text-black text-sm w-96 lg:w-full ">The team at Elabd Technologies exceeded our expectations. Their attention to detail and commitment to delivering high-quality results were evident throughout the entire process. We highly recommend their services.</p>
+                    <p className="lg:text-xl font-[500] text-black text-sm w-72 md:w-96 lg:w-full ">The team at Elabd Technologies exceeded our expectations. Their attention to detail and commitment to delivering high-quality results were evident throughout the entire process. We highly recommend their services.</p>
                     <div className="flex space-x-1">
                         {stars}
                     </div>
