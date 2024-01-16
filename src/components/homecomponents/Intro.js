@@ -1,24 +1,48 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import Navbar from '../Navbar'
 import Link from 'next/link'
+import { useLanguage } from '@/languageContext';
+import { getDictionary } from '@/app/dictionariees';
 
-const Intro = () => {
+const Intro =  () => {
+  const { selectedLanguage} = useLanguage(); 
+  const [para, setpara] = useState("")
+  const [heading, setheading] = useState("")
+  const [buttontext, setbuttontext] = useState("")
+  const [turestedtext, setturestedtext] = useState("")
+
+ // Assuming getDictionary returns a Promise
+ useEffect( ()  => {
+   const dictPromise =  getDictionary(selectedLanguage);
+   dictPromise.then((dict) => {
+    
+   setpara(dict?.home?.intro?.paragraph)
+   setheading(dict?.home?.intro?.heading)
+   setbuttontext(dict?.home?.intro?.buttonText)
+   setturestedtext(dict?.home?.intro?.turestedText)
+  }).catch((error) => {
+    console.error("Error fetching dictionary:", error);
+  });
+
+ }, [selectedLanguage])
+
   return (
     <div className='wavy-border bg-white m-3   pb-5  md:pb-28'>
     <Navbar />
 
-    <div className='  md:mt-10 mt-2 px-4 p-2 md:px-16  flex'>
+    <div className={`md:mt-10 mt-2 px-4 p-2 md:px-16  flex ${selectedLanguage == 'ar'?'flex-row-reverse':'flex-row'}`}>
 
-      <div className='flex flex-col justify-center items-center lg:items-start  lg:w-[55%] gap-5 md:gap-5'>
+      <div className={`flex flex-col justify-center items-center lg:items-start ${selectedLanguage == 'ar'?'lg:items-end ':''}  lg:w-[55%] gap-5 md:gap-5`}>
 
-        <div className='font-inter text-black '>
-          <h1 className='2xl:text-[48px] md:text-[40px] md:leading-[52px] 2xl:leading-[5rem]  font-[600] text-xl '><span className='font-[700] text-[#21AC77] text-xl md:text-[48px] 2xl:text-[64px]'>Build</span> Your Dream </h1>
-          <h2 className='2xl:text-[48px] md:text-[40px] md:leading-[52px] 2xl:leading-[5rem] font-[600] text-xl  '>App & Website With</h2>
-          <h3 className='font-[700] text-[#21AC77] text-xl md:leading-[52px] 2xl:leading-[5rem] md:text-[48px]   2xl:text-[64px]'>Elabd Technologies</h3>
+        <div className={`font-inter text-black w-full  flex ${selectedLanguage == 'ar'?'justify-end text-end':'justify-start text-start'} `}>
+          {/* <h1 className='2xl:text-[48px] md:text-[40px] md:leading-[52px] 2xl:leading-[5rem]  font-[600] text-xl '><span className='font-[700] text-[#21AC77] text-xl md:text-[48px] 2xl:text-[64px]'>Build</span> Your Dream </h1> */}
+          <h2 className='2xl:text-[48px] md:text-[40px]  md:leading-[52px] 2xl:leading-[5rem] lg:w-[70%] font-[600] text-xl  '>{heading}</h2>
+          {/* <h3 className='font-[700] text-[#21AC77] text-xl md:leading-[52px] 2xl:leading-[5rem] md:text-[48px]   2xl:text-[64px]'>Elabd Technologies</h3> */}
         </div>
 
-        <div>
-          <p className=' text-sm text-center md:text-start md:text-lg 2xl:text-xl font-[400] text-[#7a7a7a]'> We specialize in crafting innovative apps and websites that amplify your digital presence. With cutting-edge technology and creative design, we bring your vision to life. Let's elevate your digital footprint together.</p>
+        <div className={`${selectedLanguage == 'ar'?'justify-end text-end':'justify-start text-start'}`}>
+          <p className=' text-sm text-center md:text-start md:text-lg 2xl:text-xl font-[400] text-[#7a7a7a]'>  {para}</p>
         </div>
 
         <div className='flex gap-3'>
@@ -26,13 +50,13 @@ const Intro = () => {
         
           <Link href={'/contact-us'}>
 
-          <button className='bg-gradient-to-r px-10 py-2 rounded-3xl from-[#35D373] to-[#1C9E76]'>Hire us</button>
+          <button className='bg-gradient-to-r px-10 py-2 rounded-3xl from-[#35D373] to-[#1C9E76]'>{buttontext}</button>
           </Link>
 
         </div>
 
 
-        <div className='flex flex-col md:flex-row relative md:right-14 justify-start  items-center'>
+        <div className={`flex flex-col md:flex-row relative md:right-14 ${selectedLanguage == 'ar'?'md:right-0':''} justify-start  items-center`}>
 
            <div className='flex relative '>
            <img src="/images/person1.png"  alt="person1 img"  className="w-16 h-16  relative md:left-12 "/>
@@ -41,7 +65,7 @@ const Intro = () => {
            </div>
 
            <div>
-            <p className='md:text-2xl  xl:text-[32px]  font-[500] text-black'>Trusted by 1000+ People</p>
+            <p className='md:text-2xl  xl:text-[32px]  font-[500] text-black'>{turestedtext}</p>
            </div>
 
         </div>

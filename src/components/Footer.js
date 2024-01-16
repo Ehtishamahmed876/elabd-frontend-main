@@ -1,10 +1,61 @@
+"use client"
+import { getDictionary } from "@/app/dictionariees";
+import { useLanguage } from "@/languageContext";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Footer = () => {
+  const { selectedLanguage, changeLanguage } = useLanguage();
+
+  const [sidetext, setSidetext] = useState("")
+  const [usefulltext, setUsefulltext] = useState("")
+  const [abouttext, setAbouttext] = useState("")
+
+  const [usefulllink1, setusefulllink1] = useState("")
+  const [usefulllink2, setusefulllink2] = useState("")
+  const [usefulllink3, setusefulllink3] = useState("")
+  const [usefulllink4, setusefulllink4] = useState("")
+  const [usefulllink5, setusefulllink5] = useState("")
+  const [usefulllink6, setusefulllink6] = useState("")
+  const [usefulllink7, setusefulllink7] = useState("")
+
+
+  const [aboutlink1, setaboutlink1] = useState("")
+  const [aboutlink2, setaboutlink2] = useState("")
+  const [aboutlink3, setaboutlink3] = useState("")
+  const [aboutlink4, setaboutlink4] = useState("")
+
+
+  useEffect(() => {
+    const dictPromise =  getDictionary(selectedLanguage);
+    dictPromise.then((dict) => {
+
+
+    setSidetext(dict?.footer?.sidetext)
+    setUsefulltext(dict?.footer?.usefulltext)
+    setAbouttext(dict?.footer?.abouttext)
+
+    setusefulllink1(dict?.footer?.usefulllink1)
+    setusefulllink2(dict?.footer?.usefulllink2)
+    setusefulllink3(dict?.footer?.usefulllink3)
+    setusefulllink4(dict?.footer?.usefulllink4)
+    setusefulllink5(dict?.footer?.usefulllink5)
+    setusefulllink6(dict?.footer?.usefulllink6)
+    setusefulllink7(dict?.footer?.usefulllink7)
+
+    setaboutlink1(dict?.footer?.aboutlink1)
+    setaboutlink2(dict?.footer?.aboutlink2)
+    setaboutlink3(dict?.footer?.aboutlink3)
+    setaboutlink4(dict?.footer?.aboutlink4)
+
+
+   }).catch((error) => {
+     console.error("Error fetching dictionary:", error);
+   });
+  }, [selectedLanguage]);
   return (
     <div className="bg-[#2F2F2F]  w-[97%] md:w-[99%] mb-1  mx-auto mt-0 p-4 xl:p-16">
-      <div className="xl:space-x-24 flex flex-col xl:flex-row ">
+      <div className={`xl:space-x-24 flex flex-col  ${selectedLanguage == 'ar'?'xl:flex-row-reverse xl:justify-between xl:gap-10':'xl:flex-row'}`}>
         <div className="xl:w-[20%] space-y-4 md:space-y-8 2xl:space-y-16">
           <div className="flex gap-2   items-center">
             <img
@@ -21,10 +72,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-sm 2xl:text-[16px]   font-[400] text-[#CFD3D7]">
-            Working with client and community, We deliver masterpeices that
-            create vibrant new design and ideas, attract people, and
-            encourage. Specialized in UI/UX, iOS Apps, Android Apps, Content
-            Writing, Animations and Website Development.
+           {sidetext}
           </p>
 
           <div className="lg:mt-2 mt-5 flex gap-3">
@@ -51,60 +99,60 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex xl:w-[28%] justify-around">
-          <div className="md:w-[30%] flex flex-col gap-4 2xl:gap-8 mt-10">
+        <div className={`flex ${selectedLanguage == 'ar'?'flex-row-reverse':'flex-row'} xl:w-[28%] justify-around`}>
+          <div className={`md:w-[30%] flex ${selectedLanguage == 'ar'?'text-end':'text-start'} flex-col gap-4 2xl:gap-8 mt-10`}>
             <h1 className="font-[700] text-[16px] text-[#35D373] ">
-              Useful Links
+              {usefulltext}
             </h1>
             <Link href={"/"}>
-              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">Home</p>
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">  {usefulllink1}</p>
             </Link>
             <Link href={"/services"}>
               <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
-                Services
+              {usefulllink2}
               </p>
             </Link>
             <Link href={"/projects"}>
               <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
-                Projects
+              {usefulllink3}
               </p>
             </Link>
             <Link href={"/clients"}>
-              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">Clients</p>
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">{usefulllink4}</p>
             </Link>
             <Link href={"/reviews"}>
-              <p className="font-[500] text-sm 2xl:text-[16px] text-[#c2d6eb]  ">Reviews</p>
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#c2d6eb]  "> {usefulllink5}</p>
             </Link>
             <Link href={"/team"}>
               <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
-                Our Team
+              {usefulllink6}
               </p>
             </Link>
             <Link href={"/careers/home"}>
-              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">Careers</p>
+              <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">{usefulllink7}</p>
             </Link>
           </div>
 
-          <div className="lg:w-[40%] 2xl:w-[35%] flex flex-col gap-4 2xl:gap-8 mt-10 ">
-            <h1 className="font-[700] text-[16px] text-[#35D373] ">About Us</h1>
+          <div className={`lg:w-[40%] 2xl:w-[35%] ${selectedLanguage == 'ar'?'text-end':'text-start'} flex flex-col gap-4 2xl:gap-8 mt-10 `}>
+            <h1 className="font-[700] text-[16px] text-[#35D373] ">{abouttext}</h1>
             <Link href={"/privacy-policy"}>
               <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
-                Privacy Policy
+                {aboutlink1}
               </p>
             </Link>
             <Link href={"/terms"}>
               <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
-                Terms & Condition
+                {aboutlink2}
               </p>
             </Link>
             <Link href={"/about-us"}>
               <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
-                About Us
+                {aboutlink3}
               </p>
             </Link>
             <Link href={"/contact-us"}>
               <p className="font-[500] text-sm 2xl:text-[16px] text-[#CFD3D7]  ">
-                Contact Us
+                {aboutlink4}
               </p>
             </Link>
           </div>

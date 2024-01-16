@@ -4,16 +4,54 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import projects from "@/data/projectdata";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { getDictionary } from "../dictionariees";
+import { useLanguage } from "@/languageContext";
 
 const Projects = () => {
+  const { selectedLanguage} = useLanguage(); 
+
+  const [projectheading, setprojectheading] = useState("")
+  const [projectpara, setprojectpara] = useState("")
+  const [heading1, setheading1] = useState("")
+  const [heading2, setheading2] = useState("")
+  const [heading3, setheading3] = useState("")
+  const [heading4, setheading4] = useState("")
+  const [heading5, setheading5] = useState("")
+  const [heading6, setheading6] = useState("")
+
+  
+
+  
+
+
+ // Assuming getDictionary returns a Promise
+ useEffect( ()  => {
+   const dictPromise =  getDictionary(selectedLanguage);
+   dictPromise.then((dict) => {
+    
+   setprojectheading(dict?.projects?.heading)
+   setprojectpara(dict?.projects?.paragraph)
+   setheading1(dict?.projects?.heading1)
+   setheading2(dict?.projects?.heading2)
+   setheading3(dict?.projects?.heading3)
+   setheading4(dict?.projects?.heading4)
+   setheading5(dict?.projects?.heading5)
+   setheading6(dict?.projects?.heading6)
+
+  }).catch((error) => {
+    console.error("Error fetching dictionary:", error);
+  });
+
+ }, [selectedLanguage])
+ 
   const categories = [
-    "All Projects",
-    "Apps",
-    "Websites",
-    "Web Apps",
-    "Animations",
-    "UI/UX Design",
+    heading1,
+    heading2,
+    heading3,
+    heading4,
+    heading5,
+    heading6,
   ];
 
   
@@ -39,10 +77,10 @@ const Projects = () => {
     <div className=" bg-white m-3">
       <Navbar />
       <div className=" m-3 md:m-16">
-        <div className=" flex flex-col gap-4">
-          <h1 className="text-3xl md:text-4xl  2xl:text-6xl text-black font-[700]">Company Portfolio</h1>
+        <div className={`flex flex-col ${selectedLanguage == "ar"?"items-end":"items-start"} gap-4`}>
+          <h1 className="text-3xl md:text-4xl  2xl:text-6xl text-black font-[700]">{projectheading}</h1>
           <p>
-          Welcome to the diverse world of Elabd Technologies, where innovation meets excellence. Explore our portfolio showcasing a spectrum of services and solutions
+         {projectpara}
           </p>
         </div>
 

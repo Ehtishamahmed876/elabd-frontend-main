@@ -1,0 +1,180 @@
+{
+    "navbar":{
+       "link1":"Services",
+       "link2":"Projects",
+       "link3":"Clients",
+       "link4":"Reviews",
+       "link5":"Our Team",
+       "link6":"Contact Us",
+       "buttonText":"Careers"
+    },
+    "footer":{
+       "sidetext":"Working with client and community, We deliver masterpeices that create vibrant new design and ideas, attract people, and encourage. Specialized in UI/UX, iOS Apps, Android Apps, Content Writing, Animations and Website Development.",
+       "usefulltext":"Usefull Links",
+       "abouttext":"About Us",
+       "usefulllink1":"Home",
+       "usefulllink2":"Services",
+       "usefulllink3":"Projects",
+       "usefulllink4":"Clients",
+       "usefulllink5":"Reviews",
+       "usefulllink6":"Our Team",
+       "usefulllink7":"Careers",
+       "aboutlink1":"Privacy Policy",
+       "aboutlink2":"Terms & Condition",
+       "aboutlink3":"About Us",
+       "aboutlink4":"Contact Us"
+      },
+    "home": {
+      "intro": {
+         "heading":"Build Your Dream App & Website With Elabd Technologies",
+         "paragraph":"We specialize in crafting innovative apps and websites that amplify your digital presence. With cutting-edge technology and creative design, we bring your vision to life. Let's elevate your digital footprint together.",
+         "buttonText":"Hire Us",
+         "turestedText":"Trusted by 1000+ People"
+        },
+      "ourservice": {
+        "topheading":"Our Services",
+        "topparagraph":"We provide a diverse array of solutions meticulously crafted to suit your distinct requirements. Our services span strategic consulting, seamless app and website development, and expertly designed UI/UX solutions, animations, and desktop software. Our dedicated team is committed to delivering nothing short of excellence, offering you a world of possibilities to elevate your digital journey.",
+        "uiheading":"Ui & Ux Design",
+        "uiparagraph":"Our approach focuses on creating visually appealing and easy-to-use digital environments that captivate users. We prioritize seamless experiences to ensure your audience remains engaged and satisfied.",
+        "flutterheading":"Flutter Development",
+        "flutterparagraph":"We specialize in blending performance and aesthetics, utilizing Flutter's capabilities to build standout applications. Our proficiency guarantees dynamic and feature-rich apps that offer an exceptional user experience.",
+        "webheading":"Web Design",
+        "webparagraph":"We specialize in creating websites that not only catch the eye but also ensure smooth and efficient functionality. Our expertise lies in building user-friendly design, ensuring an immersive experience for your audience.",
+        "animationheading":"Animation Design",
+        "animationparagraph":" We bring creativity to life by transforming static ideas into captivating and engaging animations. Our team excels in crafting dynamic visuals that convey your message effectively and leave a lasting impact on your audience."
+      },
+      "programs":{
+        "heading":"Other Programs",
+        "paragraph":"Discover a wide range of programs customized to fit your unique needs. Whether you're looking for innovative solutions, strategic advice, or the latest technology, we've got you covered. Our dedication to top-notch quality extends across various offerings aimed at enhancing your digital experience. Come join us on a journey where creativity meets practicality, and let's shape the future together.",
+        "gameheading":"Game Development",
+        "gameparagraph":"Embark on an exciting adventure with Us' game development. Dive into limitless fun and entertainment.",
+        "contentheading":"Content Writing",
+        "contentparagraph":"Captivate your audience with Us' content writing services. We use powerful words to tell engaging stories.",
+        "socialheading":"Social Media Markating",
+        "soccalparagraph":"Boost your brand's online presence with Us' social media marketing. We make your brand shine across different platforms."
+      },
+      "chooseus":{
+        "heading":"Why Should Choose us",
+        "designheading":"Advance Designs",
+        "designparagraph":"Elevate your projects with our cutting-edge design solutions tailored to push boundaries and set new standards.",
+        "teamheading":"Creative Team",
+        "teamparagraph":"Meet our dynamic team of visionary minds dedicated to transforming ideas into impactful realities.",
+        "supportheading":"Quick Support",
+        "supportparagraph":"Our responsive support team is committed to swiftly addressing your queries and ensuring a seamless experience."
+      },
+      "creations":{
+        "heading":"Let’s Have a Look at",
+        "subheading":"Our Creations",
+        "buttontext":"View All Our Work",
+        "uiheading":"Ui & Ux Design",
+        "appsheading":"Apps",
+        "webheading":"Websites",
+        "animationheading":"Animation"
+      },
+      "reviews":{
+        "heading":"Customer's Reviews",
+        "subheading":"Discover what our clients are saying about Elabd Technologies"
+      }
+    },
+    "services":{
+      "servicesheading":"Services We Offer",
+      "servicespara":"We provide a diverse array of solutions meticulously crafted to suit your distinct requirements. Our services span strategic consulting, seamless app and website development, and expertly designed UI/UX solutions, animations, and desktop software. Our dedicated team is committed to delivering nothing short of excellence, offering you a world of possibilities to elevate your digital journey.",
+      "uiheading":"Ui & Ux Design",
+      "uiparagraph":"Our approach focuses on creating visually appealing and easy-to-use digital environments that captivate users. We prioritize seamless experiences to ensure your audience remains engaged and satisfied.",
+      "flutterheading":"Flutter Development",
+      "flutterparagraph":"We specialize in blending performance and aesthetics, utilizing Flutter's capabilities to build standout applications. Our proficiency guarantees dynamic and feature-rich apps that offer an exceptional user experience.",
+      "webheading":"Web Design",
+      "webparagraph":"We specialize in creating websites that not only catch the eye but also ensure smooth and efficient functionality. Our expertise lies in building user-friendly design, ensuring an immersive experience for your audience.",
+      "animationheading":"Animation Design",
+      "animationparagraph":" We bring creativity to life by transforming static ideas into captivating and engaging animations. Our team excels in crafting dynamic visuals that convey your message effectively and leave a lasting impact on your audience.",
+      "projectheading":"Our lastest Projects",
+      "projectpara":"Explore innovation and excellence with Elabd Technologies through our recent projects",
+      "btntext":"Explore"
+    },
+    "projects":{
+      "heading":"Company Portfolio",
+      "paragraph":"Welcome to the diverse world of Elabd Technologies, where innovation meets excellence. Explore our portfolio showcasing a spectrum of services and solutions.",
+      "heading1":"All Projects",
+      "heading2":"Apps",
+      "heading3":"Websites",
+      "heading4":"Web Apps",
+      "heading5":"Animations",
+      "heading6":"UI/UX Design"
+    },
+    "clients":{
+      "heading1":"Elabd Technologies",
+      "heading2":"With Thousands of Satisfied",
+      "heading3":"Customers",
+      "paragraph":"Experience the excellence that sets Elabd Technologies apart. Our commitment to innovation, quality, and customer satisfaction makes us your ideal digital partner. Join us today and discover the difference that fuels our success story."
+    },
+    "reviews":{
+      "heading":"Words of Praise from Our Valued Customers",
+      "paragraph":"At Elabd Technologies, our success is measured by the satisfaction of our customers. Here are some heartfelt words from those who have entrusted us with their digital journey",
+      "turestedText":"Trusted by 1000+ People",
+      "btntext":"Add Your Review"
+    },
+    "team":{
+      "teamheading":"Meet Our Team",
+      "teamparagraph":"Meet our exceptional team, a diverse and dynamic group of individuals united by a passion for excellence and a drive for innovation. Each member brings a unique set of skills, experiences, and perspectives to the table, creating a rich tapestry of talent that defines our collaborative spirit. Our team is not just a collection of individuals; we are a tight-knit community that values communication, mutual support, and continuous learning. ",
+      "topheading":"Higher Authorties",
+      "ceoname":"Waqas Ahmed",
+      "ceodesi":"CEO & Founder",
+      "ceopara":"Waqas, the visionary CEO and Founder of Elabd, brings a wealth of expertise in management and sales to the helm of our organization. With a keen understanding of strategic leadership, Waqas has successfully navigated the complexities of the business landscape, steering Elabd towards innovation and growth. Under his guidance, Elabd thrives as a testament to his commitment to excellence, leadership, and the pursuit of transformative success.",
+      "lead1name":"Abdul Shakoor",
+      "lead1desi":"TEAM LEAD / FLUTTER DEVELOPER",
+      "lead1para":"Abdul Shakoor, a versatile professional, serves as a Project Manager, Mobile Apps Developer, and accomplished Team Lead. Excelling in his role, Abdul effectively leads complex projects, fostering collaboration and driving innovation. His passion for excellence in mobile apps development, coupled with leadership finesse, ensures our team consistently delivers high-quality, tailored mobile solutions that surpass client expectations. ",
+      "lead2name":"Ghulam Abbas",
+      "lead2desi":"TEAM LEAD / WEB DEVELOPER",
+      "lead2para":"Ghulam Abbas, a Web Developer and adept Team Lead, leverages a deep understanding of web development intricacies. With a proven track record of steering successful web projects, he empowers his team through visionary guidance, fostering a culture of creativity and precision. Dedicated to delivering cutting-edge web solutions and harnessing the latest technologies, Ghulam ensures our team consistently creates impactful digital experiences.",
+      "topheading2":"Team Members",
+      "member1name":"Syed Taimoor shah",
+      "member1desi":"Senior Flutter Developer",
+      "member2name":"Daniyal Ahmed",
+      "member2desi":"UI/UX Densigner",
+      "member3name":"Ehtisham Ahmed",
+      "member3desi":"Mern Stack Developer",
+      "member4name":"Muhammad Sohaib",
+      "member4desi":"Flutter Developer",
+      "member5name":"Muhammad Shahwaiz",
+      "member5desi":"Flutter Developer",
+      "member6name":"Ali Hussain",
+      "member6desi":"Flutter Intern",
+      "member7name":"Muhammad Ulfat",
+      "member7desi":"Supporting Staff"
+    },
+    "contact":{
+      "heading":"Get in touch",
+      "subheading":"We are here for you! How can we help",
+      "emailheading":"Email",
+      "subjectheading":"Subject",
+      "commentheading":"Comment",
+      "btntext":"Submit",
+      "phoneheading":"Phone",
+      "addressheading":"Address"
+    },
+    "policies":{
+      "heading":"Our Policies",
+      "point1":"In all National Holidays our office will remain closed.",
+      "point2":"In the case of three vacations without leave request in a month due to unsatisfactory performance in the Company, attention will be brought through a written show cause notice. If this happens for the third time, disciplinary action will be taken.",
+      "point3":"Leave means leave taken in advance by call/WhatsApp from the responsible person. Leave without permission will be counted as absence. In case of emergency, CAR is immediately informed by phone. After coming back to the institution, leave will be accepted with written permission; otherwise, absence will be counted.",
+      "point4":"If 7 consecutive days of vacation are taken, the middle and last weekly and all other holidays will be deducted. However, the annual holidays of Ramadan and Eid al-Fitr are exempt from this.",
+      "point5":"Four days delay up to 15 minutes in the initial hours of lease is forgiven. In case of further delay, deductions will be made. Habitual lateness will result in disciplinary action after two warnings.",
+      "point6":"During the period of leave, it can be exchanged for Remote Based Job. Work can also be done from home by mutual consent in case of reasons like strikes.",
+      "point7":"It is not allowed to open any office computer/laptop for any unrelated function and website. Negligence will result in strict disciplinary action.",
+      "point8":"Eating Paan, Gutka, Mainpuri, Cigarette, and Snuff are not allowed during office time. Personal use of mobile phones is not allowed during office time, except for emergency calls outside the office for a maximum of 10 minutes.",
+      "point9":"Sleeping without the permission of the manager during office timings is not allowed. Having any kind of relationship or contact with any client without the permission of the Company is prohibited.",
+      "point10":"According to the decided government procedure, income tax will be deducted from the salary. Re-submitting the file is the responsibility of the hirer.",
+      "point11":"It is obligatory for every sane and mature Muslim man to pray in congregation five times a day. The Company has no issue with praying in congregation on time."
+    },
+    "terms":{
+      "heading":"Terms & Condition",
+      "point1heading":"I. EMPLOYEE DUTIES.",
+      "point1para":"The Employee agrees that they will act in accordance with this Agreement and with the best interests of the Employer in mind, which may or may not require them to present the best of their skills, experience, and talents, to perform all the duties required of the Position. In carrying out the duties and responsibilities of their Position, the Employee agrees to adhere to any and all policies, procedures, rules, regulations, as administered by the Employer. In addition, the Employee agrees to abide by all local, county, State, and Federal laws while employed by the Employer.",
+      "point2heading":"II. RESPONSIBILITIES.",
+      "point2para":"The Employee shall be given the job title of Junior UI UX Designer, (“Position”) which shall involve: Designing and Maintaining UI Designs of Websites & Applications. The Employer may also assign duties to the Employee from time to time by the Employer. The Employee shall be expected to work full-time.",
+      "point3heading":"III. EMPLOYMENT PERIOD.",
+      "point3para":"The Employer agrees to hire the Employee: At-Will which means this Agreement may be terminated at any time by either the Employee or Employer. After termination by any of the Parties, neither will have any obligation other than the non-disclosure of the Employer’s proprietary information.",
+      "point3Aheading":"a.) Employee’s Termination.",
+      "point3Apara":"The Employee shall have the right to terminate this Agreement by providing at least 30 days’ notice. If the Employee should terminate this Agreement, he or she shall be entitled to severance, equal to their pay at the time of termination, for a period of 1 month."
+    }
+  }

@@ -1,8 +1,37 @@
+"use client"
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import React from "react";
+import { useLanguage } from "@/languageContext";
+import React, { useEffect, useState } from "react";
+import { getDictionary } from "../dictionariees";
 
 const Client = () => {
+  const { selectedLanguage} = useLanguage(); 
+
+ 
+  const [heading1, setheading1] = useState("")
+  const [heading2, setheading2] = useState("")
+  const [heading3, setheading3] = useState("")
+  const [paragraph, setparagraph] = useState("")
+ 
+
+ // Assuming getDictionary returns a Promise
+ useEffect( ()  => {
+   const dictPromise =  getDictionary(selectedLanguage);
+   dictPromise.then((dict) => {
+    
+   setheading1(dict?.clients?.heading1)
+   setheading2(dict?.clients?.heading2)
+   setheading3(dict?.clients?.heading3)
+   setparagraph(dict?.clients?.paragraph)
+
+
+  }).catch((error) => {
+    console.error("Error fetching dictionary:", error);
+  });
+
+ }, [selectedLanguage])
+ 
   const reviewsData = [
  
     {
@@ -66,20 +95,17 @@ const Client = () => {
         <div className="bg-white m-3 font-inter">
           <Navbar />
 
-          <div className="flex p-4 lg:px-16 items-center">
+          <div className={`flex p-4 ${selectedLanguage == "ar"?"flex-row-reverse text-end":"flex-row"} lg:px-16 items-center`}>
             <div className="flex-1">
-              <h1 className="font-[700] text-2xl md:leading-[3rem] 2xl:leading-[5rem] md:text-[48px] 2xl:text-[80px] text-[#21AC77]">
-                  Elabd Technologies  
+              <h1 className="font-[700]  text-2xl md:leading-[3rem] 2xl:leading-[5rem] md:text-[48px] 2xl:text-[80px] text-[#21AC77]">
+                  {heading1} 
                 <span className="2xl:text-[64px] mx-2 2xl:mx-6  md:text-[40px] md:leading-[3rem] 2xl:leading-[5rem] text-lg font-[700] text-black">
-                    With Thousands of Satisfied 
+                  {heading2}
                 </span>
-                Customers
+                  {heading3}
               </h1>
-              <p className="md:text-lg  2xl:text-xl font-[400] text-[#8b8b8b] ">
-                Experience the excellence that sets Elabd Technologies apart.
-                Our commitment to innovation, quality, and customer satisfaction
-                makes us your ideal digital partner. Join us today and discover
-                the difference that fuels our success story.
+              <p className="md:text-lg   2xl:text-xl font-[400] text-[#8b8b8b] ">
+                  {paragraph}
               </p>
             </div>
             <div className="flex-1  hidden lg:block">

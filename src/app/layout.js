@@ -1,3 +1,4 @@
+import { LanguageProvider } from "@/languageContext";
 import "./globals.css";
 import { Inter, Poppins, Raleway, Roboto } from "next/font/google";
 
@@ -46,7 +47,9 @@ export default function RootLayout({ children }) {
         sizes="32x32"
         href="/images/favicon.png"
       />
-      <body className={`${poppins.className} `}>{children}</body>
+        <LanguageProvider>
+        <body className={`${poppins.className} `}>{children}</body>
+        </LanguageProvider>
     </html>
   );
 }

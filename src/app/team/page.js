@@ -1,54 +1,139 @@
+"use client"
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { useLanguage } from "@/languageContext";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getDictionary } from "../dictionariees";
 
 const Teams = () => {
+
+
+  const { selectedLanguage} = useLanguage(); 
+
+ 
+  const [teamheading, setteamheading] = useState("")
+  const [teampara, setteampara] = useState("")
+  const [topheading, settopheading] = useState("")
+  const [ceoname, setceoname] = useState("")
+  const [ceodesi, setceodesi] = useState("")
+  const [ceopara, setceopara] = useState("")
+  const [lead1name, setlead1name] = useState("")
+  const [lead1desi, setlead1desi] = useState("")
+  const [lead1para, setlead1para] = useState("")
+  const [lead2name, setlead2name] = useState("")
+  const [lead2desi, setlead2desi] = useState("")
+  const [lead2para, setlead2para] = useState("")
+  const [topheading2, settopheading2] = useState("")
+  const [member1name, setmember1name] = useState("")
+  const [member1desi, setmember1desi] = useState("")
+  const [member2name, setmember2name] = useState("")
+  const [member2desi, setmember2desi] = useState("")
+  const [member3name, setmember3name] = useState("")
+  const [member3desi, setmember3desi] = useState("")
+  const [member4name, setmember4name] = useState("")
+  const [member4desi, setmember4desi] = useState("")
+  const [member5name, setmember5name] = useState("")
+  const [member5desi, setmember5desi] = useState("")
+  const [member6name, setmember6name] = useState("")
+  const [member6desi, setmember6desi] = useState("")
+  const [member7name, setmember7name] = useState("")
+  const [member7desi, setmember7desi] = useState("")
+
+
+
+
+ 
+
+ // Assuming getDictionary returns a Promise
+ useEffect( ()  => {
+   const dictPromise =  getDictionary(selectedLanguage);
+   dictPromise.then((dict) => {
+    
+   setteamheading(dict?.team?.teamheading)
+   setteampara(dict?.team?.teamparagraph)
+   settopheading(dict?.team?.topheading)
+   setceoname(dict?.team?.ceoname)
+   setceodesi(dict?.team?.ceodesi)
+   setceopara(dict?.team?.ceopara)
+   setlead1name(dict?.team?.lead1name)
+   setlead1desi(dict?.team?.lead1desi)
+   setlead1para(dict?.team?.lead1para)
+   setlead2name(dict?.team?.lead2name)
+   setlead2desi(dict?.team?.lead2desi)
+   setlead2para(dict?.team?.lead2para)
+   settopheading2(dict?.team?.topheading2)
+   setmember1name(dict?.team?.member1name)
+   setmember1desi(dict?.team?.member1desi)
+   setmember2name(dict?.team?.member2name)
+   setmember2desi(dict?.team?.member2desi)
+   setmember3name(dict?.team?.member3name)
+   setmember3desi(dict?.team?.member3desi)
+   setmember4name(dict?.team?.member4name)
+   setmember4desi(dict?.team?.member4desi)
+   setmember5name(dict?.team?.member5name)
+   setmember5desi(dict?.team?.member5desi)
+   setmember6name(dict?.team?.member6name)
+   setmember6desi(dict?.team?.member6desi)
+   setmember7name(dict?.team?.member7name)
+   setmember7desi(dict?.team?.member7desi)
+
+
+
+
+  }).catch((error) => {
+    console.error("Error fetching dictionary:", error);
+  });
+
+ }, [selectedLanguage])
+
+
   const teamMembers = [
     {
       id: 1,
-      name: "Syed Taimoor shah",
+      name: member1name,
       image: "/images/taimoor.png", // Image path
 
-      position: "Senior Flutter  Developer",
+      position: member1desi,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
     },
     {
       id: 2,
-      name: "Daniyal Ahmed",
+      name: member2name,
       image: "/images/dinyal.jpeg", // Image path
-      position: "UI/UX Densigner",
+      position: member2desi,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
     },
     {
       id: 4,
-      name: "Ehtisham Ahmed",
+      name: member3name,
       image: "/images/ehtisham.jpeg", // Image path
 
-      position: "MERN Stack Developer",
+      position: member3desi,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
     },
     {
       id: 5,
-      name: "Muhammad Shahwaiz",
-      image: "/images/shahwaiz.png", // Image path
+      name: member4name,
+      image: "/images/sohaib.png", // Image path
 
-      position: "Flutter Developer",
+      position: member4desi,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+
     },
     {
       id: 6,
-      name: "Muhammad Sohaib",
-      image: "/images/sohaib.png", // Image path
+      name: member5name,
+      image: "/images/shahwaiz.png", // Image path
 
-      position: "Flutter Developer",
+      position: member5desi,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
     },
     {
       id: 7,
-      name: "Ali Hussain",
+      name: member6name,
       image: "/images/ali.png", // Image path
-      position: "Flutter Intern",
+      position: member6desi,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
     },
     // {
@@ -61,10 +146,10 @@ const Teams = () => {
     // },
     {
       id: 9,
-      name: "Muhammad  Ulfat",
+      name: member7name,
       image: "/images/ulfat.png", // Image path
 
-      position: "Supporting Staff",
+      position: member7desi,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
     },
 
@@ -83,19 +168,12 @@ const Teams = () => {
           <div className="hidden lg:block  absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent -z-1"></div>
 
 
-          <div className="p-4 lg:p-16 gap-5 flex flex-col justify-end md:absolute bottom-0">
+          <div className={`p-4 lg:p-16 gap-5 flex flex-col ${selectedLanguage == "ar"?"items-end text-end":"items-start"} justify-end md:absolute bottom-0`}>
             <h1 className="md:text-[48px] 2xl:text-[64px] text-xl text-black md:text-white font-[600]">
-              Meet Our Team
+              {teamheading}
             </h1>
             <p className="text-sm text-black md:text-base 2xl:text-[18px] lg:w-[50%] md:text-white font-[400]">
-              Meet our exceptional team, a diverse and dynamic group of
-              individuals united by a passion for excellence and a drive for
-              innovation. Each member brings a unique set of skills,
-              experiences, and perspectives to the table, creating a rich
-              tapestry of talent that defines our collaborative spirit. Our team
-              is not just a collection of individuals; we are a tight-knit
-              community that values communication, mutual support, and
-              continuous learning.
+           {teampara}
             </p>
           </div>
         </div>
@@ -104,7 +182,7 @@ const Teams = () => {
       <div>
         <div className="p-4 lg:p-16 ">
           <h2 className="text-xl lg:text-[40px] mt-5 md:mt-28 text-center font-[700] text-black">
-            Higher Authorties
+            {topheading}
           </h2>
 
           <div className="grid grid-cols-1  mt-10 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -117,18 +195,11 @@ const Teams = () => {
                 />
                 <div className="p-4 flex gap-4 flex-col items-center">
                   <h2 className=" text-xl lg:text-2xl font-[700]">
-                    Waqas Ahmed
+                    {ceoname}
                   </h2>
-                  <p className="text-[#21AC77] font-[600]">CEO & Founder</p>
+                  <p className="text-[#21AC77] font-[600]">{ceodesi}</p>
                   <p className="text-sm  2xl:text-[16px] font-[500] text-center text-[#818181]">
-                    Waqas, the visionary CEO and Founder of Elabd, brings
-                    a wealth of expertise in management and sales to the helm of
-                    our organization. With a keen understanding of strategic
-                    leadership, Waqas has successfully navigated the
-                    complexities of the business landscape, steering Elabd
-                    towards innovation and growth. Under his guidance, Elabd
-                    thrives as a testament to his commitment to excellence,
-                    leadership, and the pursuit of transformative success.
+                 {ceopara}
                   </p>
                   <div className="flex gap-3 ">
                     <Link href={"https://instagram.com/"} target="_blank">
@@ -156,20 +227,13 @@ const Teams = () => {
                 />
                 <div className="p-4 flex gap-4 flex-col items-center">
                   <h2 className=" text-xl lg:text-2xl font-[700]">
-                    Abdul Shakoor
+                    {lead1name}
                   </h2>
                   <p className="text-[#21AC77] font-[600]">
-                    TEAM LEAD / FLUTTER DEVELOPER
+                   {lead1desi}
                   </p>
                   <p className="text-sm 2xl:text-[16px] text-center font-[500] text-[#818181]">
-                    Abdul Shakoor, a versatile professional, serves as a Project
-                    Manager, Mobile Apps Developer, and accomplished Team Lead.
-                    Excelling in his role, Abdul effectively leads complex
-                    projects, fostering collaboration and driving innovation.
-                    His passion for excellence in mobile apps development, coupled with
-                    leadership finesse, ensures our team consistently delivers
-                    high-quality, tailored mobile solutions that surpass client
-                    expectations.
+                  {lead1para}
                   </p>
                   <div className="flex gap-3 ">
                     <Link
@@ -203,20 +267,13 @@ const Teams = () => {
                 />
                 <div className="p-4 flex gap-4 flex-col items-center">
                   <h2 className=" text-xl lg:text-2xl font-[700]">
-                    Ghulam Abbas
+                    {lead2name}
                   </h2>
                   <p className="text-[#21AC77] font-[600]">
-                    TEAM LEAD / WEB DEVELOPER
+                    {lead2desi}
                   </p>
                   <p className="text-sm 2xl:text-[16px] text-center font-[500] text-[#818181]">
-                    Ghulam Abbas, a Web Developer and adept Team Lead, leverages
-                    a deep understanding of web development intricacies. With a
-                    proven track record of steering successful web projects, he
-                    empowers his team through visionary guidance, fostering a
-                    culture of creativity and precision. Dedicated to delivering
-                    cutting-edge web solutions and harnessing the latest
-                    technologies, Ghulam ensures our team consistently creates
-                    impactful digital experiences.
+                   {lead2para}
                   </p>
                   <div className="flex gap-3 ">
                     <Link href={"https://github.com/abbasDD"} target="_blank">
@@ -243,7 +300,7 @@ const Teams = () => {
           </div>
 
           <h2 className="text-xl lg:text-[40px] mt-28 text-center font-[700] text-black">
-            Team Members
+            {topheading2}
           </h2>
 
           <div className="grid grid-cols-1  mt-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">

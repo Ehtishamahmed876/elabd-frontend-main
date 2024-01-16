@@ -1,71 +1,111 @@
-"use client"
+"use client";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { useRouter } from "next/navigation";
+import { useLanguage } from "@/languageContext";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { getDictionary } from "../dictionariees";
 
 const page = () => {
-  const router = useRouter()
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [comment, setComment] = useState('');
+  const { selectedLanguage } = useLanguage();
 
-  const sendEmail =  () => {
-    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=elabdtech@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(comment)}`;
-    window.open(mailtoLink, '_blank');
- 
+  const [heading, setheading] = useState("");
+  const [subheading, setsubheading] = useState("");
+  const [emailheading, setemailheading] = useState("");
+  const [subjectheading, setsubjectheading] = useState("");
+  const [commentheading, setcommentheading] = useState("");
+  const [btntext, setbtntext] = useState("");
+  const [phoneheading, setphoneheading] = useState("");
+  const [addressheading, setaddressheading] = useState("");
+
+  // Assuming getDictionary returns a Promise
+  useEffect(() => {
+    const dictPromise = getDictionary(selectedLanguage);
+    dictPromise
+      .then((dict) => {
+        setheading(dict?.contact?.heading);
+        setsubheading(dict?.contact?.subheading);
+        setemailheading(dict?.contact?.emailheading);
+        setsubjectheading(dict?.contact?.subjectheading);
+        setcommentheading(dict?.contact?.commentheading);
+        setbtntext(dict?.contact?.btntext);
+        setphoneheading(dict?.contact?.phoneheading);
+        setaddressheading(dict?.contact?.addressheading);
+      })
+      .catch((error) => {
+        console.error("Error fetching dictionary:", error);
+      });
+  }, [selectedLanguage]);
+
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [comment, setComment] = useState("");
+
+  const sendEmail = () => {
+    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=elabdtech@gmail.com&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(comment)}`;
+    window.open(mailtoLink, "_blank");
   };
 
   return (
     <div className="m-3">
       <div className="bg-white ">
         <Navbar />
-        <div className="p-4 py-10 lg:p-16 flex flex-col lg:flex-row justify-around">
-        <form onSubmit={sendEmail} className="p-4 lg:p-10 rounded-xl flex flex-col gap-5 bg-[#383838]">
-      <h1 className="text-[30px] text-[#21AC77] font-[600]">Get in touch</h1>
-      <p className="text-[18px] text-white font-[400]">We are here for you! How can we help?</p>
+        <div className={`p-4 py-10 lg:p-16 flex flex-col  ${selectedLanguage== "ar"?"lg:flex-row-reverse":"lg:flex-row"} justify-around`}>
+          <form
+            onSubmit={sendEmail}
+            className={`p-4 lg:p-10 rounded-xl flex flex-col ${selectedLanguage == 'ar'?"items-end text-end lg:w-[26rem]":"item-start text-start"} gap-5 bg-[#383838]`}
+          >
+            <h1 className="text-[30px] text-[#21AC77] font-[600]">{heading}</h1>
+            <p className="text-[18px] text-white font-[400]">{subheading}</p>
 
-      <div className="mt-5">
-        <p className="text-[16px] text-white font-[500]">Email</p>
-        <input
-          type="text"
-          id="user_email"
-          value={email}
-          required
-          onChange={(e) => setEmail(e.target.value)}
-          className="w-full border border-[#C5C5C5] border-opacity-20 text-white bg-[#383838] p-3 rounded-lg outline-none"
-        />
-      </div>
-      <div className="mt-5">
-        <p className="text-[16px] text-white font-[500]">Subject</p>
-        <input
-          type="text"
-          id="user_subject"
-          value={subject}
-          required
-          onChange={(e) => setSubject(e.target.value)}
-          className="w-full border border-[#C5C5C5] border-opacity-20 text-white bg-[#383838] p-3 rounded-lg outline-none"
-        />
-      </div>
-      <div className="mt-5">
-        <p className="text-[16px] text-white font-[500]">Comment</p>
-        <textarea
-          id="user_comment"
-          rows={5}
-          value={comment}
-          required
-          onChange={(e) => setComment(e.target.value)}
-          className="w-full border border-[#C5C5C5] border-opacity-20 text-white bg-[#383838] p-3 rounded-lg outline-none"
-        ></textarea>
-      </div>
-      <button
-        type="submit"
-        className="bg-gradient-to-r py-3 w-48 rounded-full text-white from-[#35D373] to-[#1C9E76]"
-      >
-        Submit
-      </button>
-    </form>
+            <div className="mt-5 w-full">
+              <p className="text-[16px] text-white font-[500]">
+                {emailheading}
+              </p>
+              <input
+                type="text"
+                id="user_email"
+                value={email}
+                required
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full border border-[#C5C5C5] border-opacity-20 text-white bg-[#383838] p-3 rounded-lg outline-none"
+              />
+            </div>
+            <div className="mt-5 w-full">
+              <p className="text-[16px] text-white font-[500]">
+                {subjectheading}
+              </p>
+              <input
+                type="text"
+                id="user_subject"
+                value={subject}
+                required
+                onChange={(e) => setSubject(e.target.value)}
+                className="w-full border border-[#C5C5C5] border-opacity-20 text-white bg-[#383838] p-3 rounded-lg outline-none"
+              />
+            </div>
+            <div className="mt-5 w-full">
+              <p className="text-[16px] text-white font-[500]">
+                {commentheading}
+              </p>
+              <textarea
+                id="user_comment"
+                rows={5}
+                value={comment}
+                required
+                onChange={(e) => setComment(e.target.value)}
+                className="w-full border border-[#C5C5C5] border-opacity-20 text-white bg-[#383838] p-3 rounded-lg outline-none"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="bg-gradient-to-r py-3 w-48 rounded-full text-white from-[#35D373] to-[#1C9E76]"
+            >
+              {btntext}
+            </button>
+          </form>
           <div className="flex flex-col items-center">
             <img src="/images/contact-img.png" alt="contect image" />
             <div className="flex  gap-3">
@@ -122,7 +162,7 @@ const page = () => {
               <div className="flex flex-col gap-2">
                 <div>
                   <h1 className="font-popins font-[500] text-[16px] text-black">
-                    Phone
+                    {phoneheading}
                   </h1>
                   <li className="text-secondary font-popins text-[16px] font-[400]">
                     +92 332 0661463
@@ -130,7 +170,7 @@ const page = () => {
                 </div>
                 <div>
                   <h1 className="font-popins font-[500] text-[16px] text-black">
-                    Email
+                    {emailheading}
                   </h1>
                   <li className="text-secondary font-popins text-[16px] font-[400]">
                     elabdtech@gmail.com
@@ -138,7 +178,7 @@ const page = () => {
                 </div>
                 <div>
                   <h1 className="font-popins font-[500] text-[16px] text-black">
-                    Address
+                    {addressheading}
                   </h1>
                   <li className="text-secondary font-popins text-[16px] font-[400]">
                     Office No 02, Munawar Plaza, I-10 Islmabad

@@ -1,5 +1,7 @@
 "use client"
-import React from 'react'
+import { getDictionary } from '@/app/dictionariees';
+import { useLanguage } from '@/languageContext';
+import React, { useEffect, useState } from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -22,21 +24,48 @@ const ProgramSlider = () => {
         }
     };
 
+    const { selectedLanguage} = useLanguage(); 
+
+    const [gamepara, setGamepara] = useState("")
+    const [gameheading, setGameheadig] = useState("")
+    const [contentpara, setContentpara] = useState("")
+    const [contentheading, setContentheading] = useState("")
+    const [socialpara, setSocialpara] = useState("")
+    const [socialheading, setSocialheading] = useState("")
+
+    
+  
+   // Assuming getDictionary returns a Promise
+   useEffect( ()  => {
+     const dictPromise =  getDictionary(selectedLanguage);
+     dictPromise.then((dict) => {
+      
+     setGameheadig(dict?.home?.programs?.gameheading)
+     setGamepara(dict?.home?.programs?.gameparagraph)
+     setContentheading(dict?.home?.programs?.contentheading)
+     setContentpara(dict?.home?.programs?.contentparagraph)
+     setSocialheading(dict?.home?.programs?.socialheading)
+     setSocialpara(dict?.home?.programs?.soccalparagraph)
+    }).catch((error) => {
+      console.error("Error fetching dictionary:", error);
+    });
+  
+   }, [selectedLanguage])
 
     const data = [
         {
-            title: 'Game Development',
-            description: "Embark on an exciting adventure with Us' game development. Dive into limitless fun and entertainment.",
+            title: gameheading,
+            description: gamepara,
             image: "/images/game.png",
         },
         {
-            title: 'Social Media Marketing',
-            description: "Boost your brand's online presence with Us' social media marketing. We make your brand shine across different platforms.",
+            title: socialheading,
+            description: socialpara,
             image: "/images/soical.png",
         },
         {
-            title: 'Content Writing',
-            description: "Captivate your audience with Us' content writing services. We use powerful words to tell engaging stories.",
+            title: contentheading,
+            description: contentpara,
             image: "/images/content.png",
         },
         // Add more items as needed
@@ -75,7 +104,7 @@ const ProgramSlider = () => {
                             <p className="text-white md:text-[16px] text-center 2xl:text-[20px] font-[400] md:w-80 lg:w-[27rem]">{item.description}</p>
                         </div>
                         <div className="bg-white text-center md:w-40 rounded-3xl p-3">
-                            <button className="font-[500] md:text-[16px] text-black">Read More</button>
+                            <button className="font-[500] md:text-[16px] text-black">{selectedLanguage == 'ar'?"اقرأ أكثر":"Read More"}</button>
                         </div>
                     </div>
             </div>

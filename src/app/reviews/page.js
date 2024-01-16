@@ -4,17 +4,47 @@ import Navbar from "@/components/Navbar";
 import ProgramSlider from "@/components/homecomponents/Slider";
 import addReview, { getReviews } from "@/firebase/firestore/clientReview";
 import { Button, Modal } from "flowbite-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage'
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { useLanguage } from "@/languageContext";
+import { getDictionary } from "../dictionariees";
 
 const Reviews = () => {
+
+  const { selectedLanguage} = useLanguage(); 
+
+ 
+  const [heading, setheading] = useState("")
+  const [turestedheading, setturestedheading] = useState("")
+  const [btntext, setbtntext] = useState("")
+  const [paragraph, setparagraph] = useState("")
+ 
+
+ // Assuming getDictionary returns a Promise
+ useEffect( ()  => {
+   const dictPromise =  getDictionary(selectedLanguage);
+   dictPromise.then((dict) => {
+    
+   setheading(dict?.reviews?.heading)
+   setturestedheading(dict?.reviews?.turestedText)
+   setbtntext(dict?.reviews?.btntext)
+   setparagraph(dict?.reviews?.paragraph)
+
+
+  }).catch((error) => {
+    console.error("Error fetching dictionary:", error);
+  });
+
+ }, [selectedLanguage])
+
+
+
+
+
   const [openModal, setOpenModal] = useState(false);
   const [loading, setLoading] = useState(false)
-
-
-
 
   
   const [selectedImage, setSelectedImage] = useState(null);
@@ -124,17 +154,17 @@ const Reviews = () => {
 
         <Navbar />
         <div className="flex flex-col  mx-4 md:mx-16 justify-center items-center py-5 md:py-20">
-          <h1 className="md:text-[40px]  2xl:text-[48px] md:leading-[5rem]  font-[600] text-xl ">
+          {/* <h1 className="md:text-[40px]  2xl:text-[48px] md:leading-[5rem]  font-[600] text-xl ">
             <span className="font-[700] mr-2 2xl:mr-4 text-[#21AC77] text-xl md:text-[48px] 2xl:text-[64px]">
               Words
             </span>
             of Praise from Our
-          </h1>
-          <h2 className=" font-[700] text-[#21AC77] text-xl md:text-[48px] 2xl:text-[64px]">
-            Valued Customers
+          </h1> */}
+          <h2 className=" font-[700] text-[#21AC77] lg:w-[50%] lg:text-center lg:leading-[3rem] text-xl md:text-[48px] 2xl:text-[64px]">
+            {heading}
           </h2>
           <p className=" text-sm text-center  md:text-xl lg:w-[40%]  font-[400] text-[#8b8b8b] mt-5 md:mt-10">
-          At Elabd Technologies, our success is measured by the satisfaction of our customers. Here are some heartfelt words from those who have entrusted us with their digital journey:
+            {paragraph}
           </p>
           <div className="flex flex-col mt-5 md:mt-10 md:flex-row relative md:right-14 justify-start  items-center">
             <div className="flex relative ">
@@ -157,14 +187,14 @@ const Reviews = () => {
 
             <div>
               <p className="md:text-2xl  xl:text-[32px]  font-[500] text-black">
-                Trusted by 1000+ People
+                {turestedheading}
               </p>
             </div>
             
 
           </div>
           <div className="mt-5">
-             <Button className=" bg-gradient-to-r  from-[#35D373] to-[#1C9E76] text-xl text-white" onClick={() => setOpenModal(true)}>Add Your Review</Button>
+             <Button className=" bg-gradient-to-r  from-[#35D373] to-[#1C9E76] text-xl text-white" onClick={() => setOpenModal(true)}>{btntext}</Button>
              </div>
         </div>
 
